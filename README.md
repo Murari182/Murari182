@@ -64,4 +64,10 @@
 
 ---
 
+## 🐍 Contribution Snake  
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Murari182/Murari182/output/github-contribution-grid-snake.svg" />
+</p>
+
 ⭐ **If you like my work, consider giving a star!** ⭐  
