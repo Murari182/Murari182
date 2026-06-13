@@ -38,6 +38,7 @@
 ![Git](https://img.shields.io/badge/Git-orange?style=for-the-badge)
 ![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge)
 ![VS Code](https://img.shields.io/badge/VSCode-blue?style=for-the-badge)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
 ---
 
