@@ -11,10 +11,6 @@
 
 ## 🌌 About Me
 
-## 👨‍💻 About Me
-
-## 👨‍💻 About Me
-
 Hi! I'm Sreeramadasu Mukunda Rama Chary, a passionate **Mathematics and Computing student** with a strong interest in **Cloud Computing, AWS, Programming, and Technology**.
 
 💡 I enjoy learning and building projects related to:
@@ -64,6 +60,8 @@ Hi! I'm Sreeramadasu Mukunda Rama Chary, a passionate **Mathematics and Computin
 
 ## 🧘 Bhagavad Gita Wisdom
 
+> *"कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । <br>
+मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"*<br>
 > *"You have the right to perform your duty, but not to the fruits of your actions."*
 > *"Stay focused on effort, not outcomes."*
 
@@ -78,6 +76,7 @@ Hi! I'm Sreeramadasu Mukunda Rama Chary, a passionate **Mathematics and Computin
 ## 💡 Philosophy
 
 > *"Discipline + Consistency = Success"* 🚀
+
 
 ---
 
