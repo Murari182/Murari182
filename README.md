@@ -11,12 +11,23 @@
 
 ## 🌌 About Me
 
-🎓 Mathematics & Computing student at **RGIPT**
-🚀 Passionate about **AI/ML & Data Science**
-💡 Interested in building real-world impactful projects
-🌱 Currently learning **Machine Learning & Deep Learning**
-🤝 Open to collaborations and opportunities
-⚡ Fun fact: *Consistency beats talent*
+## 👨‍💻 About Me
+
+## 👨‍💻 About Me
+
+Hi! I'm Sreeramadasu Mukunda Rama Chary, a passionate **Mathematics and Computing student** with a strong interest in **Cloud Computing, AWS, Programming, and Technology**.
+
+💡 I enjoy learning and building projects related to:
+- ☁️ Cloud Computing (AWS)
+- 💻 Programming & Software Development & AIML
+- 📊 Problem Solving
+- 🚀 Exploring New Technologies
+
+🌱 I am continuously improving my technical skills through hands-on learning and personal projects.
+
+✨ Passionate about learning new technologies and applying them to solve real-world problems.
+
+📫 Feel free to connect and collaborate on exciting projects!
 
 ---
 
