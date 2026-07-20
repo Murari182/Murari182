@@ -1,60 +1,131 @@
-# 💫 Hey there, I'm SREERAMADASU MUKUNDA RAMA CHARY 👋
+# Hi, I'm SREERAMADASU MUKUNDA RAMA CHARY 👋
 
-![Typing Intro](https://readme-typing-svg.demolab.com/?lines=AI/ML+Explorer;Mathematics+%26+Computing+Student;Problem+Solver;Tech+Enthusiast&center=true&width=600&height=50)
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=28&duration=3500&pause=1000&center=true&vCenter=true&width=900&lines=AI+%26+Machine+Learning+Enthusiast;Mathematics+%26+Computing+Student;AWS+Cloud+Practitioner;Problem+Solver;Open+Source+Learner" />
+</p>
 
-[![About](https://img.shields.io/badge/About-Me-0A66C2?style=for-the-badge)](#-about-me)
-[![Tech Stack](https://img.shields.io/badge/Tech-Stack-1F6FEB?style=for-the-badge)](https://github.com/Murari182/Murari182#-tech-stack)
-[![Connect](https://img.shields.io/badge/Connect-0077B5?style=for-the-badge)](#-connect-with-me)
-[![Live Contributions](https://img.shields.io/badge/Live-Contributions-16A34A?style=for-the-badge)](#-github-stats)
-
----
-
-## 🌌 About Me
-
-Hi! I'm Sreeramadasu Mukunda Rama Chary, a passionate **Mathematics and Computing student** with a strong interest in **Cloud Computing, AWS, Programming, and Technology**.
-
-💡 I enjoy learning and building projects related to:
-- ☁️ Cloud Computing (AWS)
-- 💻 Programming & Software Development & AIML
-- 📊 Problem Solving
-- 🚀 Exploring New Technologies
-
-🌱 I am continuously improving my technical skills through hands-on learning and personal projects.
-
-✨ Passionate about learning new technologies and applying them to solve real-world problems.
-
-📫 Feel free to connect and collaborate on exciting projects!
+<p align="center">
+  <img src="https://img.shields.io/badge/B.Tech-Mathematics%20%26%20Computing-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Cloud-AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white">
+  <img src="https://img.shields.io/badge/AI%2FML-Learning-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Open%20Source-Contributor-181717?style=for-the-badge&logo=github">
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+# 👨‍💻 About Me
 
-### 👨‍💻 Languages
+I'm **SREERAMADASU MUKUNDA RAMA CHARY**, a **B.Tech student in Mathematics & Computing at Rajiv Gandhi Institute of Petroleum Technology (RGIPT)** with a passion for **Artificial Intelligence, Machine Learning, Cloud Computing, and Software Development**.
 
-![C++](https://img.shields.io/badge/C++-blue?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-yellow?style=for-the-badge)
-![MATLAB](https://img.shields.io/badge/MATLAB-orange?style=for-the-badge)
+I enjoy transforming ideas into practical applications by combining mathematical thinking with modern technologies. My goal is to become an **AI Engineer** who develops intelligent, scalable, and impactful solutions.
 
-### ⚙️ Libraries
-
-![NumPy](https://img.shields.io/badge/NumPy-blue?style=for-the-badge)
-![Pandas](https://img.shields.io/badge/Pandas-black?style=for-the-badge)
-
-### 🔧 Tools
-
-![Git](https://img.shields.io/badge/Git-orange?style=for-the-badge)
-![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge)
-![VS Code](https://img.shields.io/badge/VSCode-blue?style=for-the-badge)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+Currently, I'm expanding my expertise through hands-on projects in AI, cloud technologies, and full-stack development while continuously improving my problem-solving and programming skills.
 
 ---
 
-## 📌 What I Do
+# Current Focus
 
-✔️ Build AI/ML models
-✔️ Solve coding problems
-✔️ Work on real-world projects
-✔️ Learn new technologies daily
+-  Artificial Intelligence & Machine Learning
+-  AWS Cloud Computing
+-  Software Development
+-  Data Analysis & Problem Solving
+-  Full Stack Development
+-  Continuous Learning
+
+---
+
+#  Technical Skills
+
+## Programming Languages
+
+<p>
+<img src="https://skillicons.dev/icons?i=cpp,python,matlab,html,css,javascript"/>
+</p>
+
+---
+
+## Libraries & Frameworks
+
+<p>
+<img src="https://skillicons.dev/icons?i=react,nodejs"/>
+</p>
+
+- NumPy
+- Pandas
+- FastAPI
+
+---
+
+## Cloud & DevOps
+
+<p>
+<img src="https://skillicons.dev/icons?i=aws,git,github,vscode"/>
+</p>
+
+### AWS Services
+
+- EC2
+- S3
+- IAM
+- CloudWatch
+- SNS
+- API Gateway
+- Lambda
+
+---
+## **Other Tools:**
+<p>
+<img src="https://skillicons.dev/icons?i=linux,vscode"/>
+</p>
+
+
+---
+
+# 💼 What I Do
+
+- Build AI & Machine Learning applications
+- Develop Cloud-based solutions using AWS
+- Design Full Stack web applications
+- Solve algorithmic and programming challenges
+- Explore emerging technologies
+- Contribute to personal and academic projects
+
+---
+
+# 🌱 Currently Learning
+
+- Machine Learning
+- Deep Learning
+- Generative AI
+- Data Structures & Algorithms
+- System Design
+- Advanced AWS Services
+
+---
+
+#  Career Objective
+
+To build intelligent, scalable, and innovative software solutions by leveraging Artificial Intelligence, Machine Learning, and Cloud Computing while continuously learning and contributing to impactful projects.
+
+---
+
+# 📈 GitHub Goals
+
+- Build meaningful open-source projects
+- Strengthen AI & Cloud expertise
+- Share knowledge through repositories
+- Collaborate with developers worldwide
+
+---
+
+## 🤝 Let's Connect
+
+I'm always open to collaborating on interesting projects, discussing new technologies, or contributing to open-source initiatives.
+
+Let's build something amazing together!
+
+---
+⭐ *"Learning never stops. Every project is an opportunity to grow."*
 
 ---
 
@@ -69,7 +140,11 @@ Hi! I'm Sreeramadasu Mukunda Rama Chary, a passionate **Mathematics and Computin
 
 ## 🌐 Connect With Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge)](https://www.linkedin.com/in/sreeramadasu-mukunda-rama-chary-1a547a367/)
+## 🤝 Connect with Me
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Murari182)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sreeramadasu-mukunda-rama-chary-1a547a367/)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mukundaramachary.123@gmail.com)
 
 ---
 
