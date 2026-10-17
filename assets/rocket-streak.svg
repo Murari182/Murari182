@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap');
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+      .serif { font-family: 'Cinzel', Georgia, serif; }
+    </style>
+
+    <linearGradient id="rs-blue-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="45%" stop-color="#091426" />
+      <stop offset="80%" stop-color="#0D1E3A" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="rs-blue-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="35%" stop-color="#1E3A5F" stop-opacity="0.5" />
+      <stop offset="70%" stop-color="#2563EB" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Flight Trajectory Beam Gradient: Blue to Electric Cyan -->
+    <linearGradient id="trajectory-beam-blue" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0B1528" stop-opacity="0.2" />
+      <stop offset="30%" stop-color="#1D4ED8" stop-opacity="0.6" />
+      <stop offset="70%" stop-color="#38BDF8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#F0F9FF" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Rocket Flame Plume: Cyan Ion Thruster -->
+    <linearGradient id="flame-plume-cyan" x1="100%" y1="50%" x2="0%" y2="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="25%" stop-color="#38BDF8" />
+      <stop offset="70%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#050811" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="sun-flare-blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#38BDF8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#050811" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="blue-flare-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#2563EB" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#050811" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filters for Radiant Glow -->
+    <filter id="intense-blue-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur1" />
+      <feGaussianBlur stdDeviation="2" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="particle-blue-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="920" height="340" rx="16" fill="url(#rs-blue-bg)" />
+  <rect width="920" height="340" rx="16" fill="none" stroke="url(#rs-blue-border)" stroke-width="1.2" />
+
+  <!-- Ambient Radiant Orbs -->
+  <circle cx="750" cy="110" r="140" fill="url(#sun-flare-blue)" />
+  <circle cx="200" cy="240" r="100" fill="url(#blue-flare-core)" />
+
+  <!-- Background Coordinate Grid -->
+  <g opacity="0.08" stroke="#38BDF8" stroke-width="0.75">
+    <line x1="60" y1="90" x2="860" y2="90" stroke-dasharray="3 6" />
+    <line x1="60" y1="170" x2="860" y2="170" stroke-dasharray="3 6" />
+    <line x1="60" y1="250" x2="860" y2="250" stroke-dasharray="3 6" />
+    <line x1="180" y1="50" x2="180" y2="290" stroke-dasharray="2 6" />
+    <line x1="380" y1="50" x2="380" y2="290" stroke-dasharray="2 6" />
+    <line x1="580" y1="50" x2="580" y2="290" stroke-dasharray="2 6" />
+    <line x1="780" y1="50" x2="780" y2="290" stroke-dasharray="2 6" />
+  </g>
+
+  <!-- Top Telemetry Header -->
+  <g class="mono" font-size="10.5">
+    <text x="40" y="36" fill="#38BDF8" font-weight="600" letter-spacing="2">
+      MISSION: CONSISTENCY <tspan fill="#60A5FA">▪</tspan> ROCKET CODING STREAK TELEMETRY
+    </text>
+    <text x="880" y="36" text-anchor="end" fill="#94A3B8" opacity="0.8" letter-spacing="1.5">
+      STATUS // 110+ COMMITS · APEX ORBIT
+    </text>
+  </g>
+
+  <!-- Corner Reticle Ticks -->
+  <path d="M 16 32 L 16 16 L 32 16" fill="none" stroke="#38BDF8" stroke-width="1.6" />
+  <path d="M 904 16 L 904 32" fill="none" stroke="#38BDF8" stroke-width="1.6" />
+  <path d="M 888 16 L 904 16" fill="none" stroke="#38BDF8" stroke-width="1.6" />
+  <path d="M 16 308 L 16 324 L 32 324" fill="none" stroke="#38BDF8" stroke-width="1.6" />
+  <path d="M 904 308 L 904 324 L 888 324" fill="none" stroke="#38BDF8" stroke-width="1.6" />
+
+  <!-- ================= ASCENDING SPACE FLIGHT TRAJECTORY ================= -->
+  <!-- Base Guideline Curve -->
+  <path
+    d="M 100 260 C 260 255, 420 220, 560 170 C 680 125, 780 95, 840 85"
+    fill="none"
+    stroke="#1E3A5F"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+
+  <!-- Radiant Animated Trajectory Energy Beam (Cyan Neon) -->
+  <path
+    d="M 100 260 C 260 255, 420 220, 560 170 C 680 125, 780 95, 840 85"
+    fill="none"
+    stroke="url(#trajectory-beam-blue)"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    stroke-dasharray="8 6"
+    filter="url(#intense-blue-glow)"
+  >
+    <animate attributeName="stroke-dashoffset" from="140" to="0" dur="4s" repeatCount="indefinite" />
+  </path>
+
+  <!-- ================= MISSION CHECKPOINTS (BLUE THEME) ================= -->
+
+  <!-- Checkpoint 1: Stage 01 Genesis -->
+  <g transform="translate(140, 258)">
+    <circle cx="0" cy="0" r="14" fill="#091426" stroke="#38BDF8" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="5" fill="#38BDF8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="0" y="28" text-anchor="middle" class="mono" font-size="9" font-weight="600" fill="#38BDF8">STAGE 01</text>
+    <text x="0" y="40" text-anchor="middle" class="mono" font-size="8" fill="#94A3B8">GENESIS [2025]</text>
+  </g>
+
+  <!-- Checkpoint 2: Stage 02 C++ DSA Rigor -->
+  <g transform="translate(360, 230)">
+    <circle cx="0" cy="0" r="14" fill="#091426" stroke="#60A5FA" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="5" fill="#60A5FA">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="0" y="28" text-anchor="middle" class="mono" font-size="9" font-weight="600" fill="#7DD3FC">STAGE 02</text>
+    <text x="0" y="40" text-anchor="middle" class="mono" font-size="8" fill="#94A3B8">C++ DSA RIGOR</text>
+  </g>
+
+  <!-- Checkpoint 3: Stage 03 AWS Cloud Architecture -->
+  <g transform="translate(580, 165)">
+    <circle cx="0" cy="0" r="14" fill="#091426" stroke="#38BDF8" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="5" fill="#38BDF8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+    <text x="0" y="28" text-anchor="middle" class="mono" font-size="9" font-weight="600" fill="#38BDF8">STAGE 03</text>
+    <text x="0" y="40" text-anchor="middle" class="mono" font-size="8" fill="#94A3B8">AWS ARCHITECTURE</text>
+  </g>
+
+  <!-- Checkpoint 4: Stage 04 AI Orbit & 110+ Commits -->
+  <g transform="translate(790, 95)">
+    <circle cx="0" cy="0" r="18" fill="#0D1E3A" stroke="#F0F6FC" stroke-width="2" filter="url(#intense-blue-glow)">
+      <animate attributeName="r" values="16;20;16" dur="2.4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="0" cy="0" r="7" fill="#38BDF8" />
+    <circle cx="0" cy="0" r="3" fill="#F0F6FC" />
+    <text x="0" y="-24" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#F0F6FC" letter-spacing="1">STAGE 04: AI ORBIT</text>
+    <text x="0" y="32" text-anchor="middle" class="mono" font-size="8.5" fill="#7DD3FC">110+ COMMITS VELOCITY</text>
+  </g>
+
+  <!-- ================= THE LIVING ASCENDING CYAN ION ROCKET ================= -->
+  <g>
+    <path
+      id="ascend-path-blue"
+      d="M 100 260 C 260 255, 420 220, 560 170 C 680 125, 780 95, 840 85"
+      fill="none"
+      stroke="none"
+    />
+
+    <g>
+      <animateMotion
+        dur="7s"
+        repeatCount="indefinite"
+        rotate="auto"
+        path="M 100 260 C 260 255, 420 220, 560 170 C 680 125, 780 95, 840 85"
+      />
+
+      <!-- Rocket Engine Exhaust Plume (Cyan Ion Glow) -->
+      <polygon points="-12,-3 -42,0 -12,3" fill="url(#flame-plume-cyan)" filter="url(#intense-blue-glow)">
+        <animate
+          attributeName="points"
+          values="-12,-3 -42,0 -12,3; -12,-4 -54,0 -12,4; -12,-3 -42,0 -12,3"
+          dur="0.35s"
+          repeatCount="indefinite"
+        />
+      </polygon>
+
+      <!-- Inner Core White Flame -->
+      <polygon points="-8,-1.5 -22,0 -8,1.5" fill="#FFFFFF" opacity="0.95" />
+
+      <!-- Left & Right Wing Stabilizers -->
+      <polygon points="-8,-8 -14,-14 -4,-8" fill="#38BDF8" stroke="#1E3A5F" stroke-width="0.8" />
+      <polygon points="-8,8 -14,14 -4,8" fill="#38BDF8" stroke="#1E3A5F" stroke-width="0.8" />
+
+      <!-- Fuselage -->
+      <path
+        d="M -10,-5 C -4,-6 8,-4 18,0 C 8,4 -4,6 -10,5 Z"
+        fill="#F0F6FC"
+        stroke="#38BDF8"
+        stroke-width="1.2"
+        filter="url(#particle-blue-glow)"
+      />
+
+      <!-- Porthole Window -->
+      <circle cx="4" cy="0" r="3" fill="#091426" stroke="#60A5FA" stroke-width="1" />
+      <circle cx="4" cy="0" r="1.5" fill="#38BDF8" />
+
+      <!-- Nosecone Beacon -->
+      <circle cx="18" cy="0" r="2" fill="#38BDF8">
+        <animate attributeName="r" values="1.8;3;1.8" dur="0.8s" repeatCount="indefinite" />
+      </circle>
+    </g>
+  </g>
+
+  <!-- Ambient Floating Particle Photons -->
+  <g opacity="0.7">
+    <circle cx="240" cy="180" r="2" fill="#F0F6FC" filter="url(#particle-blue-glow)">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="460" cy="120" r="2.5" fill="#38BDF8" filter="url(#particle-blue-glow)">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="700" cy="200" r="1.8" fill="#60A5FA">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="1.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="820" cy="160" r="2" fill="#F0F6FC">
+      <animate attributeName="opacity" values="0.1;0.9;0.1" dur="2.6s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Bottom Telemetry Dashboard Bar -->
+  <g transform="translate(460, 312)">
+    <rect x="-380" y="-14" width="760" height="26" rx="13" fill="#091426" fill-opacity="0.95" stroke="#1E3A5F" stroke-width="1" />
+    <text x="0" y="3.5" text-anchor="middle" class="mono" font-size="9.5" fill="#94A3B8" letter-spacing="1.5">
+      <tspan fill="#38BDF8">VERIFIED STREAK TELEMETRY:</tspan> 32 ACTIVE DAYS <tspan fill="#1E3A5F">|</tspan> PEAK STREAK: <tspan fill="#F0F6FC">3 DAYS</tspan> <tspan fill="#1E3A5F">|</tspan> 2026 VELOCITY: <tspan fill="#7DD3FC">110+ COMMITS</tspan> <tspan fill="#1E3A5F">|</tspan> RGIPT [26.28° N]
+    </text>
+  </g>
+</svg>

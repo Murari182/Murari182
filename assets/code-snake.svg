@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap');
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+      .serif { font-family: 'Cinzel', Georgia, serif; }
+    </style>
+
+    <linearGradient id="snake-blue-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="45%" stop-color="#091426" />
+      <stop offset="85%" stop-color="#0D1E3A" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Snake Body Gradient: Deep Blue to Radiant Cyan -->
+    <linearGradient id="snake-body-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0B1528" stop-opacity="0.2" />
+      <stop offset="25%" stop-color="#1D4ED8" />
+      <stop offset="60%" stop-color="#2563EB" />
+      <stop offset="85%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#F0F9FF" />
+    </linearGradient>
+
+    <radialGradient id="head-flare-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="35%" stop-color="#38BDF8" stop-opacity="0.95" />
+      <stop offset="70%" stop-color="#2563EB" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#050811" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filters for Cell Glow -->
+    <filter id="cell-blue-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="head-glow-filter" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur1" />
+      <feGaussianBlur stdDeviation="2" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="920" height="320" rx="16" fill="url(#snake-blue-bg)" />
+  <rect width="920" height="320" rx="16" fill="none" stroke="#1E3A5F" stroke-width="1.2" />
+
+  <!-- Corner Brackets -->
+  <path d="M 16 30 L 16 16 L 30 16" fill="none" stroke="#38BDF8" stroke-width="1.5" />
+  <path d="M 904 16 L 904 30" fill="none" stroke="#38BDF8" stroke-width="1.5" />
+  <path d="M 890 16 L 904 16" fill="none" stroke="#38BDF8" stroke-width="1.5" />
+  <path d="M 16 290 L 16 304 L 30 304" fill="none" stroke="#38BDF8" stroke-width="1.5" />
+  <path d="M 904 290 L 904 304 L 890 304" fill="none" stroke="#38BDF8" stroke-width="1.5" />
+
+  <!-- Top Telemetry Header -->
+  <g class="mono" font-size="10.5">
+    <text x="40" y="34" fill="#38BDF8" font-weight="600" letter-spacing="2">
+      THE LIVING CODE SNAKE <tspan fill="#60A5FA">▪</tspan> GITHUB USAGE &amp; CONTRIBUTION AUTOMATON
+    </text>
+    <text x="880" y="34" text-anchor="end" fill="#94A3B8" opacity="0.8" letter-spacing="1.5">
+      USAGE METRICS // 110+ COMMITS · 32 DAYS ACTIVE
+    </text>
+  </g>
+
+  <!-- ================= GITHUB USAGE TELEMETRY SUMMARY CARDS ================= -->
+  <g transform="translate(40, 52)">
+    <!-- Card 1: 2026 Commits -->
+    <g transform="translate(0, 0)">
+      <rect width="195" height="42" rx="8" fill="#091426" stroke="#1E3A5F" stroke-width="1" />
+      <text x="12" y="16" class="mono" font-size="8.5" fill="#94A3B8">2026 ANNUAL COMMITS</text>
+      <text x="12" y="32" class="mono" font-size="14" font-weight="700" fill="#F0F6FC">110+ <tspan font-size="10" fill="#38BDF8">COMMITS</tspan></text>
+      <circle cx="178" cy="21" r="5" fill="#38BDF8" opacity="0.8" />
+    </g>
+
+    <!-- Card 2: Active Days -->
+    <g transform="translate(215, 0)">
+      <rect width="195" height="42" rx="8" fill="#091426" stroke="#1E3A5F" stroke-width="1" />
+      <text x="12" y="16" class="mono" font-size="8.5" fill="#94A3B8">ACTIVE SESSIONS</text>
+      <text x="12" y="32" class="mono" font-size="14" font-weight="700" fill="#F0F6FC">32 <tspan font-size="10" fill="#60A5FA">DAYS</tspan></text>
+      <circle cx="178" cy="21" r="5" fill="#60A5FA" opacity="0.8" />
+    </g>
+
+    <!-- Card 3: Repositories -->
+    <g transform="translate(430, 0)">
+      <rect width="195" height="42" rx="8" fill="#091426" stroke="#1E3A5F" stroke-width="1" />
+      <text x="12" y="16" class="mono" font-size="8.5" fill="#94A3B8">PUBLIC REPOSITORIES</text>
+      <text x="12" y="32" class="mono" font-size="14" font-weight="700" fill="#F0F6FC">14 <tspan font-size="10" fill="#38BDF8">REPOS</tspan></text>
+      <circle cx="178" cy="21" r="5" fill="#38BDF8" opacity="0.8" />
+    </g>
+
+    <!-- Card 4: Top Language Velocity -->
+    <g transform="translate(645, 0)">
+      <rect width="195" height="42" rx="8" fill="#091426" stroke="#1E3A5F" stroke-width="1" />
+      <text x="12" y="16" class="mono" font-size="8.5" fill="#94A3B8">LANGUAGE STACK USAGE</text>
+      <text x="12" y="32" class="mono" font-size="11.5" font-weight="700" fill="#F0F6FC">C++ <tspan fill="#38BDF8">▪</tspan> PY <tspan fill="#38BDF8">▪</tspan> TS <tspan fill="#38BDF8">▪</tspan> AWS</text>
+      <circle cx="178" cy="21" r="5" fill="#2563EB" opacity="0.8" />
+    </g>
+  </g>
+
+  <!-- ================= GITHUB CALENDAR MATRIX & LIVING BLUE SNAKE ================= -->
+  <g transform="translate(48, 114)">
+    <!-- Base Matrix Grid Dots / Calendar Guides -->
+    <g opacity="0.35">
+      <line x1="0" y1="12" x2="824" y2="12" stroke="#0F2042" stroke-width="8" stroke-dasharray="10 6" />
+      <line x1="0" y1="28" x2="824" y2="28" stroke="#0F2042" stroke-width="8" stroke-dasharray="10 6" />
+      <line x1="0" y1="44" x2="824" y2="44" stroke="#0F2042" stroke-width="8" stroke-dasharray="10 6" />
+      <line x1="0" y1="60" x2="824" y2="60" stroke="#0F2042" stroke-width="8" stroke-dasharray="10 6" />
+      <line x1="0" y1="76" x2="824" y2="76" stroke="#0F2042" stroke-width="8" stroke-dasharray="10 6" />
+      <line x1="0" y1="92" x2="824" y2="92" stroke="#0F2042" stroke-width="8" stroke-dasharray="10 6" />
+      <line x1="0" y1="108" x2="824" y2="108" stroke="#0F2042" stroke-width="8" stroke-dasharray="10 6" />
+      <line x1="0" y1="124" x2="824" y2="124" stroke="#0F2042" stroke-width="8" stroke-dasharray="10 6" />
+    </g>
+
+    <!-- Active High-Velocity Contribution Clusters (Blue/Cyan Neon) -->
+    <g>
+      <!-- October 2025 Genesis Cluster -->
+      <rect x="32" y="40" width="10" height="10" rx="2" fill="#1E3A5F" stroke="#38BDF8" stroke-width="0.8" />
+      <rect x="48" y="56" width="10" height="10" rx="2" fill="#2563EB" stroke="#60A5FA" stroke-width="0.8" />
+      <rect x="64" y="24" width="10" height="10" rx="2" fill="#38BDF8" filter="url(#cell-blue-glow)" />
+
+      <!-- Study_Agent AI Cluster (Nov 2025) -->
+      <rect x="96" y="72" width="10" height="10" rx="2" fill="#38BDF8" filter="url(#cell-blue-glow)" />
+      <rect x="112" y="88" width="10" height="10" rx="2" fill="#2563EB" />
+      <rect x="128" y="56" width="10" height="10" rx="2" fill="#60A5FA" />
+
+      <!-- Spring C++ & Algorithms Sprint (Mar-May 2026) -->
+      <rect x="240" y="24" width="10" height="10" rx="2" fill="#2563EB" />
+      <rect x="256" y="40" width="10" height="10" rx="2" fill="#38BDF8" filter="url(#cell-blue-glow)" />
+      <rect x="272" y="72" width="10" height="10" rx="2" fill="#1E3A5F" />
+      <rect x="320" y="88" width="10" height="10" rx="2" fill="#2563EB" />
+      <rect x="336" y="40" width="10" height="10" rx="2" fill="#38BDF8" filter="url(#cell-blue-glow)" />
+
+      <!-- Summer AWS Cloud Practicum (July 2026 - Peak Velocity 11 commits/day) -->
+      <rect x="448" y="24" width="10" height="10" rx="2" fill="#38BDF8" filter="url(#cell-blue-glow)" />
+      <rect x="464" y="40" width="10" height="10" rx="2" fill="#F0F9FF" stroke="#38BDF8" stroke-width="1.2" filter="url(#cell-blue-glow)" />
+      <rect x="480" y="56" width="10" height="10" rx="2" fill="#38BDF8" filter="url(#cell-blue-glow)" />
+      <rect x="496" y="72" width="10" height="10" rx="2" fill="#2563EB" />
+
+      <!-- Autumn Full-Stack & C++ DSA Rigor (Aug-Oct 2026) -->
+      <rect x="624" y="40" width="10" height="10" rx="2" fill="#2563EB" />
+      <rect x="640" y="56" width="10" height="10" rx="2" fill="#38BDF8" filter="url(#cell-blue-glow)" />
+      <rect x="736" y="72" width="10" height="10" rx="2" fill="#60A5FA" filter="url(#cell-blue-glow)" />
+      <rect x="752" y="88" width="10" height="10" rx="2" fill="#F0F9FF" stroke="#60A5FA" stroke-width="1.2" filter="url(#cell-blue-glow)" />
+      <rect x="768" y="40" width="10" height="10" rx="2" fill="#38BDF8" filter="url(#cell-blue-glow)" />
+    </g>
+
+    <!-- Serpentine Guide Track -->
+    <path
+      id="blue-snake-track"
+      d="M 16 48 L 180 48 L 180 104 L 340 104 L 340 28 L 520 28 L 520 116 L 700 116 L 700 48 L 810 48"
+      fill="none"
+      stroke="#1E3A5F"
+      stroke-width="12"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      opacity="0.25"
+    />
+
+    <!-- Glowing Segmented Snake Body (Blue to Cyan) -->
+    <path
+      d="M 16 48 L 180 48 L 180 104 L 340 104 L 340 28 L 520 28 L 520 116 L 700 116 L 700 48 L 810 48"
+      fill="none"
+      stroke="url(#snake-body-blue)"
+      stroke-width="9"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-dasharray="160 800"
+      filter="url(#cell-blue-glow)"
+    >
+      <animate
+        attributeName="stroke-dashoffset"
+        from="960"
+        to="0"
+        dur="6s"
+        repeatCount="indefinite"
+      />
+    </path>
+
+    <!-- Snake Head Sensor with Radiant Cyan Halo -->
+    <g>
+      <animateMotion
+        path="M 16 48 L 180 48 L 180 104 L 340 104 L 340 28 L 520 28 L 520 116 L 700 116 L 700 48 L 810 48"
+        dur="6s"
+        repeatCount="indefinite"
+      />
+      <!-- Outer Radiant Pulse -->
+      <circle cx="0" cy="0" r="16" fill="url(#head-flare-cyan)">
+        <animate attributeName="r" values="14;20;14" dur="1.5s" repeatCount="indefinite" />
+      </circle>
+      <!-- Head Core -->
+      <circle cx="0" cy="0" r="7" fill="#F0F9FF" stroke="#38BDF8" stroke-width="1.8" filter="url(#head-glow-filter)" />
+      <circle cx="0" cy="0" r="3" fill="#050811" />
+    </g>
+  </g>
+
+  <!-- Bottom Telemetry Status Strip -->
+  <g transform="translate(460, 292)">
+    <rect x="-380" y="-13" width="760" height="26" rx="13" fill="#091426" fill-opacity="0.95" stroke="#1E3A5F" stroke-width="1" />
+    <text x="0" y="3.5" text-anchor="middle" class="mono" font-size="9.5" fill="#94A3B8" letter-spacing="1.5">
+      <tspan fill="#38BDF8">GITHUB USAGE:</tspan> 110+ COMMITS <tspan fill="#1E3A5F">|</tspan> PEAK: 11 COMMITS/DAY <tspan fill="#1E3A5F">|</tspan> REPOS: <tspan fill="#F0F6FC">14</tspan> <tspan fill="#1E3A5F">|</tspan> <tspan fill="#60A5FA">CHRONO-COORDINATES: OK</tspan>
+    </text>
+  </g>
+</svg>

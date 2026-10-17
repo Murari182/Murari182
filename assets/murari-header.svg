@@ -1,0 +1,320 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" width="100%" height="100%">
+  <defs>
+    <!-- Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap');
+      
+      .title-serif {
+        font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+        font-weight: 700;
+        letter-spacing: 9px;
+      }
+      .mono-label {
+        font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      }
+    </style>
+
+    <!-- Professional Blue Gradients -->
+    <linearGradient id="blue-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="40%" stop-color="#091426" />
+      <stop offset="75%" stop-color="#0D1E3A" />
+      <stop offset="100%" stop-color="#060A14" />
+    </linearGradient>
+
+    <radialGradient id="center-cyan-glow" cx="50%" cy="48%" r="48%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.16" />
+      <stop offset="45%" stop-color="#2563EB" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#050811" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="blue-core-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.28" />
+      <stop offset="55%" stop-color="#1D4ED8" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#050811" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Text Gradients -->
+    <linearGradient id="title-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="65%" stop-color="#F0F6FC" />
+      <stop offset="100%" stop-color="#BAE6FD" />
+    </linearGradient>
+
+    <linearGradient id="cyan-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#7DD3FC" stop-opacity="1" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="border-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="25%" stop-color="#1E3A5F" stop-opacity="0.6" />
+      <stop offset="75%" stop-color="#1E3A5F" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0.7" />
+    </linearGradient>
+
+    <linearGradient id="orbital-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.05" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="orbital-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.05" />
+      <stop offset="50%" stop-color="#2563EB" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Sweeping Cyan & Blue Energy Line -->
+    <linearGradient id="divider-sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0" />
+      <stop offset="35%" stop-color="#2563EB" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#F0F9FF" stop-opacity="1" />
+      <stop offset="65%" stop-color="#38BDF8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
+      <animateTransform
+        attributeName="gradientTransform"
+        type="translate"
+        values="-1 0; 1 0; -1 0"
+        keyTimes="0; 0.5; 1"
+        dur="5.5s"
+        repeatCount="indefinite" />
+    </linearGradient>
+
+    <!-- Subtle Coordinate Grid Pattern -->
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#38BDF8" stroke-width="0.75" stroke-opacity="0.04" />
+      <circle cx="0" cy="0" r="0.8" fill="#60A5FA" fill-opacity="0.2" />
+    </pattern>
+
+    <!-- Filters for Glow -->
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="node-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="920" height="320" rx="14" fill="url(#blue-bg)" />
+  <rect width="920" height="320" rx="14" fill="url(#center-cyan-glow)" />
+  <rect width="920" height="320" rx="14" fill="url(#grid)" />
+
+  <!-- Outer Border with Precision Corner Styling -->
+  <rect x="1" y="1" width="918" height="318" rx="13" fill="none" stroke="url(#border-gradient)" stroke-width="1.2" />
+
+  <!-- Corner Brackets & Tech Reticles -->
+  <!-- Top Left -->
+  <path d="M 12 28 L 12 12 L 28 12" fill="none" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round" />
+  <circle cx="12" cy="12" r="1.5" fill="#38BDF8" />
+  <line x1="20" y1="20" x2="26" y2="20" stroke="#60A5FA" stroke-width="0.8" opacity="0.6" />
+  <line x1="20" y1="20" x2="20" y2="26" stroke="#60A5FA" stroke-width="0.8" opacity="0.6" />
+
+  <!-- Top Right -->
+  <path d="M 892 12 L 908 12 L 908 28" fill="none" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round" />
+  <circle cx="908" cy="12" r="1.5" fill="#38BDF8" />
+  <line x1="900" y1="20" x2="894" y2="20" stroke="#60A5FA" stroke-width="0.8" opacity="0.6" />
+  <line x1="900" y1="20" x2="900" y2="26" stroke="#60A5FA" stroke-width="0.8" opacity="0.6" />
+
+  <!-- Bottom Left -->
+  <path d="M 12 292 L 12 308 L 28 308" fill="none" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round" />
+  <circle cx="12" cy="308" r="1.5" fill="#38BDF8" />
+  <line x1="20" y1="300" x2="26" y2="300" stroke="#60A5FA" stroke-width="0.8" opacity="0.6" />
+  <line x1="20" y1="300" x2="20" y2="294" stroke="#60A5FA" stroke-width="0.8" opacity="0.6" />
+
+  <!-- Bottom Right -->
+  <path d="M 892 308 L 908 308 L 908 292" fill="none" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round" />
+  <circle cx="908" cy="308" r="1.5" fill="#38BDF8" />
+  <line x1="900" y1="300" x2="894" y2="300" stroke="#60A5FA" stroke-width="0.8" opacity="0.6" />
+  <line x1="900" y1="300" x2="900" y2="294" stroke="#60A5FA" stroke-width="0.8" opacity="0.6" />
+
+  <!-- Technical Telemetry Labels -->
+  <g class="mono-label" font-size="8.5" fill="#94A3B8" opacity="0.6" letter-spacing="1.5">
+    <text x="38" y="24">SYS.ID // 0x182 · MURARI182</text>
+    <text x="38" y="302">MATH &amp; COMPUTING</text>
+    <text x="882" y="24" text-anchor="end">LOC // RGIPT [26.28° N]</text>
+    <text x="882" y="302" text-anchor="end">AI.ENGINEERING // 2026</text>
+  </g>
+
+  <!-- ================= ORBITAL DYNAMICS SYSTEM (BLUE & CYAN) ================= -->
+  <g id="orbital-system" transform="translate(460, 160)">
+    <!-- Central Ambient Glow Spot -->
+    <circle cx="0" cy="0" r="180" fill="url(#blue-core-glow)" />
+
+    <!-- Orbital Track 1: Grand Ellipse (Rotated -18 deg, Clockwise 70s) -->
+    <g transform="rotate(-18)">
+      <ellipse cx="0" cy="0" rx="380" ry="105" fill="none" stroke="url(#orbital-grad-1)" stroke-width="1.2" stroke-dasharray="5 7" opacity="0.5">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0"
+          to="360"
+          dur="70s"
+          repeatCount="indefinite" />
+      </ellipse>
+      
+      <!-- Orbiting Particle Alpha -->
+      <g>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0"
+          to="360"
+          dur="22s"
+          repeatCount="indefinite" />
+        <circle cx="380" cy="0" r="3.2" fill="#38BDF8" filter="url(#node-glow)">
+          <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
+          <animate attributeName="r" values="2.5;3.8;2.5" dur="3s" repeatCount="indefinite" />
+        </circle>
+        <!-- Counter Photon -->
+        <circle cx="-380" cy="0" r="2.2" fill="#60A5FA" opacity="0.8" />
+      </g>
+    </g>
+
+    <!-- Orbital Track 2: Nested Ellipse (Rotated 24 deg, Counter-Clockwise 50s) -->
+    <g transform="rotate(24)">
+      <ellipse cx="0" cy="0" rx="310" ry="80" fill="none" stroke="url(#orbital-grad-2)" stroke-width="1" stroke-dasharray="3 6" opacity="0.4">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="360"
+          to="0"
+          dur="50s"
+          repeatCount="indefinite" />
+      </ellipse>
+      
+      <!-- Orbiting Particle Beta -->
+      <g>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="360"
+          to="0"
+          dur="16s"
+          repeatCount="indefinite" />
+        <circle cx="310" cy="0" r="2.8" fill="#7DD3FC" filter="url(#node-glow)">
+          <animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite" />
+        </circle>
+        <!-- Counter Photon -->
+        <circle cx="-310" cy="0" r="2" fill="#38BDF8" opacity="0.75" />
+      </g>
+    </g>
+
+    <!-- Orbital Track 3: Fine Inner Ring (Rotated 5 deg, Clockwise 35s) -->
+    <g transform="rotate(5)">
+      <ellipse cx="0" cy="0" rx="220" ry="60" fill="none" stroke="#38BDF8" stroke-width="0.8" stroke-dasharray="2 10" opacity="0.3">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0"
+          to="360"
+          dur="35s"
+          repeatCount="indefinite" />
+      </ellipse>
+      <g>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0"
+          to="360"
+          dur="12s"
+          repeatCount="indefinite" />
+        <circle cx="220" cy="0" r="2" fill="#F0F6FC" opacity="0.9" />
+      </g>
+    </g>
+
+    <!-- Lateral Neural Nodes (Flanks) -->
+    <!-- Left Flank -->
+    <g transform="translate(-330, -5)" opacity="0.6">
+      <line x1="-30" y1="-25" x2="0" y2="0" stroke="#1E3A5F" stroke-width="0.8" />
+      <line x1="0" y1="0" x2="-20" y2="30" stroke="#1E3A5F" stroke-width="0.8" />
+      <line x1="0" y1="0" x2="35" y2="-10" stroke="#1E3A5F" stroke-width="0.8" />
+      <circle cx="-30" cy="-25" r="2" fill="#38BDF8">
+        <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.2s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="0" cy="0" r="2.6" fill="#60A5FA">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2.8s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="-20" cy="30" r="1.8" fill="#F0F6FC" opacity="0.7" />
+      <circle cx="35" cy="-10" r="2.2" fill="#38BDF8" opacity="0.8" />
+    </g>
+
+    <!-- Right Flank -->
+    <g transform="translate(330, 5)" opacity="0.6">
+      <line x1="30" y1="-25" x2="0" y2="0" stroke="#1E3A5F" stroke-width="0.8" />
+      <line x1="0" y1="0" x2="20" y2="30" stroke="#1E3A5F" stroke-width="0.8" />
+      <line x1="0" y1="0" x2="-35" y2="-10" stroke="#1E3A5F" stroke-width="0.8" />
+      <circle cx="30" cy="-25" r="2" fill="#60A5FA">
+        <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.5s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="0" cy="0" r="2.6" fill="#38BDF8">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="20" cy="30" r="1.8" fill="#F0F6FC" opacity="0.7" />
+      <circle cx="-35" cy="-10" r="2.2" fill="#60A5FA" opacity="0.8" />
+    </g>
+  </g>
+
+  <!-- ================= EDITORIAL CONTENT & TYPOGRAPHY ================= -->
+
+  <!-- Top Academic Identifier Eyebrow -->
+  <g class="mono-label">
+    <text x="460" y="78" text-anchor="middle" font-size="11.5" font-weight="500" fill="#38BDF8" letter-spacing="4" opacity="0.95">
+      MATHEMATICS &amp; COMPUTING <tspan fill="#60A5FA" font-size="9">◆</tspan> RGIPT
+    </text>
+  </g>
+
+  <!-- Hero Identity Title: MUKUNDA -->
+  <!-- Ambient Shadow for Title Legibility -->
+  <text x="460" y="152" text-anchor="middle" class="title-serif" font-size="54" fill="#050811" opacity="0.8" filter="url(#soft-glow)">
+    MUKUNDA
+  </text>
+  <!-- Foreground Title -->
+  <text x="460" y="150" text-anchor="middle" class="title-serif" font-size="54" fill="url(#title-gradient)">
+    MUKUNDA
+  </text>
+
+  <!-- Thin Animated Cyan Light Divider -->
+  <!-- Base subtle line -->
+  <line x1="230" y1="184" x2="690" y2="184" stroke="#1E3A5F" stroke-width="1" stroke-linecap="round" />
+  
+  <!-- Sweeping cyan energy line -->
+  <line x1="230" y1="184" x2="690" y2="184" stroke="url(#divider-sweep)" stroke-width="1.8" stroke-linecap="round" filter="url(#node-glow)" />
+
+  <!-- Center Decorative Diamond Accent -->
+  <g transform="translate(460, 184)">
+    <polygon points="0,-4.5 4.5,0 0,4.5 -4.5,0" fill="#38BDF8">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+    </polygon>
+    <circle cx="0" cy="0" r="1.5" fill="#F0F6FC" />
+  </g>
+
+  <!-- Subtitle: Focus Disciplines -->
+  <g class="mono-label">
+    <text x="460" y="222" text-anchor="middle" font-size="12.5" font-weight="600" fill="#BAE6FD" letter-spacing="5" opacity="0.95">
+      AI <tspan fill="#38BDF8" font-size="10">▪</tspan> MACHINE LEARNING <tspan fill="#38BDF8" font-size="10">▪</tspan> CLOUD
+    </text>
+  </g>
+
+  <!-- Bottom Capsule Tagline: LEARN. BUILD. ITERATE. -->
+  <g transform="translate(460, 262)">
+    <!-- Capsule Backdrop -->
+    <rect x="-140" y="-14" width="280" height="28" rx="14" fill="#0B1528" fill-opacity="0.92" stroke="#1E3A5F" stroke-width="1" />
+    <rect x="-140" y="-14" width="280" height="28" rx="14" fill="none" stroke="url(#cyan-gradient)" stroke-width="1" stroke-opacity="0.5" />
+    
+    <!-- Left & Right Accent Dots -->
+    <circle cx="-120" cy="0" r="2" fill="#38BDF8" opacity="0.8" />
+    <circle cx="120" cy="0" r="2" fill="#38BDF8" opacity="0.8" />
+
+    <!-- Tagline Text -->
+    <text x="0" y="4" text-anchor="middle" class="mono-label" font-size="10.5" font-weight="500" fill="#F0F6FC" letter-spacing="3.8" opacity="0.95">
+      LEARN <tspan fill="#38BDF8">▪</tspan> BUILD <tspan fill="#38BDF8">▪</tspan> ITERATE
+    </text>
+  </g>
+
+</svg>
