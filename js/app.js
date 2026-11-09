@@ -644,6 +644,90 @@
 
     const LIGHT_PALETTE = ['#F8FBFF', '#EAF5FF', '#DDFBFA', '#4779E8', '#9173E8'];
     const LEVEL_LABELS = ['No commits', 'Light activity', 'Moderate activity', 'High velocity', 'Peak sprint'];
+    const REPO_ACTIVITY_THRESHOLD = 25; // Activity score threshold (commits >= 25)
+
+    // Ensure glass-morphic floating tooltip element exists in document body
+    let tooltipEl = document.getElementById('heatmap-floating-tooltip');
+    if (!tooltipEl) {
+      tooltipEl = document.createElement('div');
+      tooltipEl.id = 'heatmap-floating-tooltip';
+      tooltipEl.className = 'heatmap-floating-tooltip';
+      tooltipEl.setAttribute('role', 'tooltip');
+      tooltipEl.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(tooltipEl);
+    }
+
+    function positionFloatingTooltip(clientX, clientY) {
+      if (!tooltipEl) return;
+      const padding = 16;
+      const tooltipWidth = tooltipEl.offsetWidth || 240;
+      const tooltipHeight = tooltipEl.offsetHeight || 92;
+
+      let x = clientX + 16;
+      let y = clientY - tooltipHeight - 12;
+
+      if (x + tooltipWidth > window.innerWidth - padding) {
+        x = clientX - tooltipWidth - 16;
+      }
+      if (x < padding) {
+        x = padding;
+      }
+      if (y < padding) {
+        y = clientY + 18;
+      }
+      if (y + tooltipHeight > window.innerHeight - padding) {
+        y = window.innerHeight - padding - tooltipHeight;
+      }
+
+      tooltipEl.style.transform = `translate3d(${Math.round(x)}px, ${Math.round(y)}px, 0)`;
+    }
+
+    function showFloatingTooltip(cell, e) {
+      if (!tooltipEl) return;
+      const fullDate = cell.getAttribute('data-full-date') || cell.getAttribute('data-date');
+      const count = Number(cell.getAttribute('data-count') || 0);
+      const level = cell.getAttribute('data-level') || 'No commits';
+      const repo = cell.getAttribute('data-repo') || 'Murari182';
+      const lang = cell.getAttribute('data-lang') || '';
+      const score = Number(cell.getAttribute('data-activity-score') || 0);
+      const isPulse = cell.getAttribute('data-pulse') === 'true';
+
+      const countLabel = count === 1 ? '1 commit' : `${count} commits`;
+      const pulseBadge = isPulse
+        ? `<span class="heatmap-tooltip-level-pill pulse-tag">⚡ Activity Score: ${score}</span>`
+        : `<span class="heatmap-tooltip-level-pill">${level}</span>`;
+
+      tooltipEl.innerHTML = `
+        <div class="heatmap-tooltip-header">
+          <span class="heatmap-tooltip-date">📅 ${fullDate}</span>
+          <span class="heatmap-tooltip-day-badge">${cell.getAttribute('data-day')}</span>
+        </div>
+        <div class="heatmap-tooltip-body">
+          <span class="heatmap-tooltip-count">${countLabel}</span>
+          ${pulseBadge}
+        </div>
+        <div class="heatmap-tooltip-footer">
+          <span class="heatmap-tooltip-repo">Murari182/${repo}</span>
+          <span class="heatmap-tooltip-score">${lang}</span>
+        </div>
+      `;
+
+      tooltipEl.classList.add('is-visible');
+      tooltipEl.setAttribute('aria-hidden', 'false');
+
+      if (e && typeof e.clientX === 'number') {
+        positionFloatingTooltip(e.clientX, e.clientY);
+      } else {
+        const rect = cell.getBoundingClientRect();
+        positionFloatingTooltip(rect.left + rect.width / 2, rect.top);
+      }
+    }
+
+    function hideFloatingTooltip() {
+      if (!tooltipEl) return;
+      tooltipEl.classList.remove('is-visible');
+      tooltipEl.setAttribute('aria-hidden', 'true');
+    }
 
     const VERIFIED_REPOS = [
       {
@@ -730,6 +814,8 @@
         headersMarkup += `<text x="10" y="${dy}" fill="#8190A5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">${dayNames[dIdx]}</text>`;
       });
 
+      const heatmapStartDate = new Date(2025, 9, 12); // Oct 12, 2025 (Sunday)
+
       for (let w = 0; w < weeks; w++) {
         let weekTotal = 0;
         for (let d = 0; d < days; d++) {
@@ -760,8 +846,28 @@
           const stroke = level >= 3 ? fill : '#E5EAF2';
           const monthLabel = monthNames[Math.min(5, Math.floor(w / 4))];
 
+          // Compute exact date for this cell
+          const cellDate = new Date(heatmapStartDate.getTime() + (w * 7 + d) * 86400000);
+          const exactDate = cellDate.toLocaleDateString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric'
+          });
+          const fullDate = cellDate.toLocaleDateString('en-US', {
+            weekday: 'long',
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric'
+          });
+
+          // Pulse animation triggers when repo's activity score exceeds threshold and day is active,
+          // or during peak velocity sprints
+          const isHighActivityRepo = (repoObj.commits || 0) >= REPO_ACTIVITY_THRESHOLD;
+          const isPulsing = (isHighActivityRepo && count >= 2) || count >= 4;
+          const pulseClass = isPulsing ? ' heatmap-cell-pulse' : '';
+
           cellsMarkup += `<rect
-            class="heatmap-cell-rect"
+            class="heatmap-cell-rect${pulseClass}"
             x="${x}"
             y="${y}"
             width="25"
@@ -772,13 +878,17 @@
             stroke-width="1"
             tabindex="0"
             role="button"
-            aria-label="${monthLabel} Week ${(w % 4) + 1} (${dayNames[d]}): ${count} contributions in ${repoObj.name}"
+            aria-label="${fullDate}: ${count} contributions in ${repoObj.name}"
             data-week="${monthLabel} W${(w % 4) + 1}"
             data-day="${dayNames[d]}"
+            data-date="${exactDate}"
+            data-full-date="${fullDate}"
             data-count="${count}"
             data-level="${LEVEL_LABELS[level]}"
             data-repo="${repoObj.name}"
             data-lang="${repoObj.language}"
+            data-activity-score="${repoObj.commits || 0}"
+            data-pulse="${isPulsing ? 'true' : 'false'}"
           />`;
         }
         const sx = 64 + w * 33;
@@ -835,18 +945,37 @@
       svgEl.querySelectorAll('.heatmap-cell-rect').forEach((cell) => {
         const showCellDetails = () => {
           if (!inspectorEl) return;
-          const wk = cell.getAttribute('data-week');
+          const dt = cell.getAttribute('data-full-date') || cell.getAttribute('data-date');
           const dy = cell.getAttribute('data-day');
           const cnt = cell.getAttribute('data-count');
           const lvl = cell.getAttribute('data-level');
           const repo = cell.getAttribute('data-repo');
           const lang = cell.getAttribute('data-lang');
-          inspectorEl.innerHTML = `<strong>${wk} · ${dy}</strong> — <strong style="color:#4779E8;">${cnt} ${Number(cnt) === 1 ? 'contribution' : 'contributions'}</strong> (${lvl}) · Primary Repo: <code>Murari182/${repo}</code> (${lang})`;
+          const isPulse = cell.getAttribute('data-pulse') === 'true';
+          const pulseNote = isPulse ? ' · <strong style="color:#D946EF;">⚡ High Activity Pulse</strong>' : '';
+          inspectorEl.innerHTML = `<strong>${dt}</strong> — <strong style="color:#4779E8;">${cnt} ${Number(cnt) === 1 ? 'commit' : 'commits'}</strong> (${lvl}) · Primary Repo: <code>Murari182/${repo}</code> (${lang})${pulseNote}`;
         };
-        cell.addEventListener('pointerenter', showCellDetails);
-        cell.addEventListener('focus', showCellDetails);
-        cell.addEventListener('click', showCellDetails);
+
+        cell.addEventListener('pointerenter', (e) => {
+          showFloatingTooltip(cell, e);
+          showCellDetails();
+        });
+        cell.addEventListener('pointermove', (e) => {
+          positionFloatingTooltip(e.clientX, e.clientY);
+        });
+        cell.addEventListener('pointerleave', hideFloatingTooltip);
+        cell.addEventListener('focus', () => {
+          showFloatingTooltip(cell);
+          showCellDetails();
+        });
+        cell.addEventListener('blur', hideFloatingTooltip);
+        cell.addEventListener('click', (e) => {
+          showFloatingTooltip(cell, e);
+          showCellDetails();
+        });
       });
+
+      svgEl.addEventListener('pointerleave', hideFloatingTooltip);
     }
 
     domainBtns.forEach((btn) => {

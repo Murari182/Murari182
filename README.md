@@ -300,11 +300,11 @@
 
 <p align="center">
   <a href="https://github.com/Murari182">
-    <img src="https://github-readme-stats.vercel.app/api?username=Murari182&show_icons=true&theme=default&hide_border=true&bg_color=ffffff&title_color=4779E8&text_color=52627A&icon_color=27BFCB" alt="Murari182 GitHub Stats (Light Theme)" height="165" />
+    <img src="https://github-stats-extended.vercel.app/api?username=Murari182&amp;show_icons=true&amp;theme=default&amp;hide_border=true&amp;bg_color=ffffff&amp;title_color=4779E8&amp;text_color=52627A&amp;icon_color=27BFCB" alt="Murari182 GitHub Stats (Light Theme)" height="165" />
   </a>
   &nbsp;
   <a href="https://github.com/Murari182">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Murari182&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=4779E8&text_color=52627A" alt="Murari182 Top Languages (Light Theme)" height="165" />
+    <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Murari182&amp;layout=compact&amp;theme=default&amp;hide_border=true&amp;bg_color=ffffff&amp;title_color=4779E8&amp;text_color=52627A" alt="Murari182 Top Languages (Light Theme)" height="165" />
   </a>
 </p>
 

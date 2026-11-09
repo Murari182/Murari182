@@ -1003,17 +1003,182 @@ html[data-theme="dark"] .nav-pill-track {
 
 .heatmap-cell-rect {
   cursor: pointer;
-  transition: transform 0.15s ease, stroke 0.15s ease;
+  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), stroke 0.18s ease, stroke-width 0.18s ease, filter 0.2s ease;
   transform-box: fill-box;
   transform-origin: center;
 }
 
+/* Subtle, dynamic pulse keyframe for high-activity repository cells */
+@keyframes heatmapCellPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.94;
+    filter: drop-shadow(0 0 0 rgba(71, 121, 232, 0));
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(71, 121, 232, 0.55)) drop-shadow(0 0 2px rgba(145, 115, 232, 0.45));
+    stroke: #4779E8;
+    stroke-width: 1.6px;
+  }
+}
+
+.heatmap-cell-rect.heatmap-cell-pulse {
+  animation: heatmapCellPulse 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Stagger pulse timings across grid coordinates for an organic, breathing wave */
+.heatmap-cell-rect.heatmap-cell-pulse:nth-child(2n) {
+  animation-delay: 0.45s;
+}
+.heatmap-cell-rect.heatmap-cell-pulse:nth-child(3n) {
+  animation-delay: 0.95s;
+}
+.heatmap-cell-rect.heatmap-cell-pulse:nth-child(5n) {
+  animation-delay: 1.55s;
+}
+.heatmap-cell-rect.heatmap-cell-pulse:nth-child(7n) {
+  animation-delay: 2.15s;
+}
+
 .heatmap-cell-rect:hover,
 .heatmap-cell-rect:focus {
-  stroke: #18243A;
-  stroke-width: 1.5px;
-  transform: scale(1.16);
+  stroke: #18243A !important;
+  stroke-width: 2px !important;
+  transform: scale(1.28) !important;
   outline: none;
+  animation-play-state: paused !important;
+  position: relative;
+  z-index: 5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heatmap-cell-rect.heatmap-cell-pulse {
+    animation: none !important;
+  }
+}
+
+/* ==========================================================================
+   Custom Glass-Morphic Floating Tooltip (Follows Cursor)
+   ========================================================================== */
+.heatmap-floating-tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0, 0, 0) scale(0.94);
+  transition: opacity 0.15s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.15s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.15s;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(18px) saturate(190%);
+  -webkit-backdrop-filter: blur(18px) saturate(190%);
+  border: 1px solid rgba(229, 234, 242, 0.95);
+  border-radius: 14px;
+  padding: 12px 16px;
+  box-shadow: 0 16px 36px -6px rgba(24, 36, 58, 0.14),
+              0 0 0 1px rgba(255, 255, 255, 0.85) inset,
+              0 4px 12px rgba(71, 121, 232, 0.08);
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  min-width: 220px;
+  max-width: 320px;
+  will-change: transform, opacity;
+}
+
+.heatmap-floating-tooltip.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.heatmap-tooltip-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(229, 234, 242, 0.75);
+}
+
+.heatmap-tooltip-date {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.heatmap-tooltip-day-badge {
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-soft-blue);
+  color: var(--accent-primary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.heatmap-tooltip-body {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.heatmap-tooltip-count {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.heatmap-tooltip-level-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 9px;
+  border-radius: var(--radius-pill);
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: #F0EBFF;
+  color: var(--accent-purple);
+}
+
+.heatmap-tooltip-level-pill.pulse-tag {
+  background: #FFF0F6;
+  color: #D946EF;
+  border: 1px solid rgba(217, 70, 239, 0.28);
+  box-shadow: 0 0 10px rgba(217, 70, 239, 0.25);
+}
+
+.heatmap-tooltip-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  padding-top: 4px;
+}
+
+.heatmap-tooltip-repo {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent-primary);
+}
+
+.heatmap-tooltip-score {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--accent-cyan);
 }
 
 .heatmap-inspector-bar {

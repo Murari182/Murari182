@@ -359,10 +359,14 @@ export interface HeatmapCell {
   week: number;
   day: number;
   dateLabel: string;
+  exactDate: string;
+  fullDate: string;
   count: number;
   level: 0 | 1 | 2 | 3 | 4;
   color: string;
   primaryRepo: string;
+  activityScore: number;
+  isPulseActive: boolean;
 }
 
 export const LIGHT_HEATMAP_PALETTE: Record<0 | 1 | 2 | 3 | 4, string> = {
@@ -460,6 +464,8 @@ export function buildRepoContributionHeatmap(
   let activeDays = 0;
 
   const baseWeight = activeList.reduce((acc, r) => acc + r.commitsLast16Weeks, 0);
+  const heatmapStartDate = new Date(2025, 9, 12); // Oct 12, 2025 (Sunday)
+  const REPO_ACTIVITY_THRESHOLD = 25;
 
   for (let w = 0; w < weeks; w++) {
     for (let d = 0; d < 7; d++) {
@@ -472,6 +478,23 @@ export function buildRepoContributionHeatmap(
 
       const level = computeContributionLevel(count);
       const repoObj = activeList[(w + d) % activeList.length];
+      const activityScore = repoObj ? repoObj.commitsLast16Weeks : 0;
+      const isHighActivityRepo = activityScore >= REPO_ACTIVITY_THRESHOLD;
+      const isPulseActive = (isHighActivityRepo && count >= 2) || count >= 4;
+
+      const cellDate = new Date(heatmapStartDate.getTime() + (w * 7 + d) * 86400000);
+      const exactDate = cellDate.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+      });
+      const fullDate = cellDate.toLocaleDateString('en-US', {
+        weekday: 'long',
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+      });
+
       if (count > 0) {
         totalContributions += count;
         activeDays += 1;
@@ -481,10 +504,14 @@ export function buildRepoContributionHeatmap(
         week: w,
         day: d,
         dateLabel: `Week ${w + 1}, Day ${d + 1}`,
+        exactDate,
+        fullDate,
         count,
         level,
         color: LIGHT_HEATMAP_PALETTE[level],
-        primaryRepo: repoObj ? repoObj.name : 'Murari182'
+        primaryRepo: repoObj ? repoObj.name : 'Murari182',
+        activityScore,
+        isPulseActive
       });
     }
   }

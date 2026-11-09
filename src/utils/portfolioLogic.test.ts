@@ -111,5 +111,20 @@ test('computeContributionLevel and buildRepoContributionHeatmap generate light-t
   const aiHeatmap = buildRepoContributionHeatmap(VERIFIED_GITHUB_REPOS, 'ai', 20);
   assert.equal(aiHeatmap.filteredRepos.length, 1);
   assert.equal(aiHeatmap.filteredRepos[0].name, 'Study_Agent');
+
+  // Verify date formatting and pulse animation threshold logic
+  const pulsedCells = allHeatmap.cells.filter((c) => c.isPulseActive);
+  assert.ok(pulsedCells.length > 0, 'Should have cells with pulse effect triggered');
+  for (const cell of allHeatmap.cells) {
+    assert.ok(cell.exactDate && cell.exactDate.length > 0, 'Cell should have formatted exactDate');
+    assert.ok(cell.fullDate && cell.fullDate.length > 0, 'Cell should have formatted fullDate');
+    assert.equal(typeof cell.activityScore, 'number');
+    if (cell.isPulseActive) {
+      assert.ok(
+        (cell.activityScore >= 25 && cell.count >= 2) || cell.count >= 4,
+        'Pulse should only be active when repository activity score or commit velocity exceeds threshold'
+      );
+    }
+  }
 });
 
