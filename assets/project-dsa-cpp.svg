@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 250" width="100%" height="250" fill="none" role="img" aria-label="DSA_CPP Repository Visual Preview">
+  <title>DSA_CPP Repository — Trees · Graphs · DP</title>
+  <rect width="460" height="250" rx="22" fill="#FFFFFF" stroke="#E5EAF2" stroke-width="1.5" />
+  <rect x="10" y="10" width="440" height="230" rx="16" fill="#EAF5FF" fill-opacity="0.6" />
+
+  <!-- Top Window Bar -->
+  <rect x="24" y="22" width="412" height="32" rx="10" fill="#FFFFFF" stroke="#E5EAF2" stroke-width="1" />
+  <circle cx="40" cy="38" r="4" fill="#4779E8" />
+  <circle cx="54" cy="38" r="4" fill="#27BFCB" />
+  <circle cx="68" cy="38" r="4" fill="#9173E8" />
+  <text x="86" y="42" fill="#52627A" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600">Murari182/DSA_CPP · Modern C++</text>
+
+  <!-- Custom Domain Graphic -->
+  
+      <rect x="24" y="64" width="412" height="122" rx="12" fill="#FFFFFF" stroke="#E5EAF2" />
+      <!-- Graph & Tree Visualization -->
+      <line x1="140" y1="92" x2="96" y2="132" stroke="#4779E8" stroke-width="2" />
+      <line x1="140" y1="92" x2="184" y2="132" stroke="#4779E8" stroke-width="2" />
+      <line x1="96" y1="132" x2="72" y2="164" stroke="#27BFCB" stroke-width="2" />
+      <line x1="96" y1="132" x2="120" y2="164" stroke="#27BFCB" stroke-width="2" />
+      <circle cx="140" cy="92" r="13" fill="#EAF5FF" stroke="#4779E8" stroke-width="2" />
+      <circle cx="96" cy="132" r="11" fill="#DDFBFA" stroke="#27BFCB" stroke-width="2" />
+      <circle cx="184" cy="132" r="11" fill="#F0EBFF" stroke="#9173E8" stroke-width="2" />
+      <circle cx="72" cy="164" r="9" fill="#FFFFFF" stroke="#4779E8" stroke-width="1.5" />
+      <circle cx="120" cy="164" r="9" fill="#FFFFFF" stroke="#4779E8" stroke-width="1.5" />
+
+      <rect x="236" y="82" width="178" height="86" rx="10" fill="#F8FBFF" stroke="#E5EAF2" />
+      <text x="250" y="104" fill="#18243A" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">std::priority_queue</text>
+      <text x="250" y="124" fill="#4779E8" font-family="'JetBrains Mono', monospace" font-size="10.5">Time: O(E log V)</text>
+      <text x="250" y="144" fill="#27BFCB" font-family="'JetBrains Mono', monospace" font-size="10.5">Space: O(V + E)</text>
+    
+
+  <!-- Bottom Caption Strip -->
+  <rect x="24" y="196" width="412" height="32" rx="10" fill="#FFFFFF" stroke="#E5EAF2" stroke-width="1" />
+  <text x="38" y="216" fill="#18243A" font-family="'Outfit', -apple-system, sans-serif" font-size="13" font-weight="700">DSA_CPP Repository</text>
+  <text x="422" y="216" text-anchor="end" fill="#27BFCB" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">Trees · Graphs · DP</text>
+</svg>

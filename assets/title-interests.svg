@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 84" width="100%" height="84" fill="none" role="img" aria-label="02B — WHAT I AM INTERESTED IN">
+  <title>02B — WHAT I AM INTERESTED IN</title>
+  <defs>
+    <linearGradient id="lineGrad_02B" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4779E8" stop-opacity="0.45" />
+      <stop offset="45%" stop-color="#27BFCB" stop-opacity="0.35" />
+      <stop offset="85%" stop-color="#9173E8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#E5EAF2" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="pillGrad_02B" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0EBFF" />
+      <stop offset="100%" stop-color="#F0EBFF" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="84" rx="18" fill="#FFFFFF" />
+  <rect x="1" y="1" width="998" height="82" rx="17" fill="#F8FBFF" fill-opacity="0.65" stroke="#E5EAF2" stroke-width="1" />
+
+  <rect x="24" y="22" width="58" height="28" rx="14" fill="url(#pillGrad_02B)" stroke="#E5EAF2" stroke-width="1" />
+  <text x="53" y="40" text-anchor="middle" fill="#9173E8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" letter-spacing="0.06em">02B</text>
+
+  <text x="98" y="42" fill="#18243A" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="700" letter-spacing="0.04em">
+    WHAT I AM INTERESTED IN
+  </text>
+
+  <text x="98" y="63" fill="#8190A5" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" font-weight="500">
+    Core domains across AI/ML, Algorithms, Mathematics, Full-Stack & Cloud
+  </text>
+
+  <rect x="98" y="72" width="870" height="2" rx="1" fill="url(#lineGrad_02B)" />
+</svg>

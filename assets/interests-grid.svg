@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 205" width="100%" height="205" fill="none" role="img" aria-label="Core Areas of Interest: AI & ML, Data Structures & Algorithms, Mathematics & Computing, Full-Stack Development, Cloud Computing">
+  <title>What I Am Interested In — 5 Core Engineering Domains</title>
+
+  <rect width="1000" height="205" rx="22" fill="#FFFFFF" />
+
+  <!-- Card 1: AI & Machine Learning -->
+  <g transform="translate(8, 8)">
+    <rect width="188" height="189" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
+    <rect x="18" y="18" width="44" height="44" rx="13" fill="#EAF5FF" />
+    <circle cx="40" cy="40" r="11" stroke="#4779E8" stroke-width="2" />
+    <circle cx="40" cy="40" r="3.5" fill="#27BFCB" />
+    <text x="18" y="88" fill="#18243A" font-family="'Outfit', -apple-system, sans-serif" font-size="14.5" font-weight="700">Artificial Intelligence</text>
+    <text x="18" y="106" fill="#4779E8" font-family="'Outfit', -apple-system, sans-serif" font-size="13.5" font-weight="700">&amp; Machine Learning</text>
+    <text x="18" y="132" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Intelligent multi-agent</text>
+    <text x="18" y="149" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">workflows, model pipelines</text>
+    <text x="18" y="166" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">&amp; applied AI systems.</text>
+  </g>
+
+  <!-- Card 2: Data Structures & Algorithms -->
+  <g transform="translate(207, 8)">
+    <rect width="188" height="189" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
+    <rect x="18" y="18" width="44" height="44" rx="13" fill="#DDFBFA" />
+    <path d="M32 48L40 32L48 48" stroke="#27BFCB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="40" cy="31" r="3" fill="#4779E8" />
+    <circle cx="32" cy="49" r="3" fill="#27BFCB" />
+    <circle cx="48" cy="49" r="3" fill="#27BFCB" />
+    <text x="18" y="88" fill="#18243A" font-family="'Outfit', -apple-system, sans-serif" font-size="14.5" font-weight="700">Data Structures</text>
+    <text x="18" y="106" fill="#27BFCB" font-family="'Outfit', -apple-system, sans-serif" font-size="13.5" font-weight="700">&amp; Algorithms</text>
+    <text x="18" y="132" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Asymptotic complexity,</text>
+    <text x="18" y="149" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">C++ STL implementations</text>
+    <text x="18" y="166" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">&amp; runtime benchmarking.</text>
+  </g>
+
+  <!-- Card 3: Mathematics & Computing -->
+  <g transform="translate(406, 8)">
+    <rect width="188" height="189" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
+    <rect x="18" y="18" width="44" height="44" rx="13" fill="#F0EBFF" />
+    <path d="M33 32H47L38 40L47 48H33" stroke="#9173E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="18" y="88" fill="#18243A" font-family="'Outfit', -apple-system, sans-serif" font-size="14.5" font-weight="700">Mathematics</text>
+    <text x="18" y="106" fill="#9173E8" font-family="'Outfit', -apple-system, sans-serif" font-size="13.5" font-weight="700">&amp; Computing</text>
+    <text x="18" y="132" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Mathematical foundations,</text>
+    <text x="18" y="149" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">discrete structures &amp;</text>
+    <text x="18" y="166" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">computational problem-solving.</text>
+  </g>
+
+  <!-- Card 4: Full-Stack Development -->
+  <g transform="translate(605, 8)">
+    <rect width="188" height="189" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
+    <rect x="18" y="18" width="44" height="44" rx="13" fill="#FFF0F6" />
+    <path d="M35 35L29 40L35 45M45 35L51 40L45 45" stroke="#4779E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="18" y="88" fill="#18243A" font-family="'Outfit', -apple-system, sans-serif" font-size="14.5" font-weight="700">Full-Stack</text>
+    <text x="18" y="106" fill="#4779E8" font-family="'Outfit', -apple-system, sans-serif" font-size="13.5" font-weight="700">Web Development</text>
+    <text x="18" y="132" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Responsive React UIs,</text>
+    <text x="18" y="149" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">FastAPI backends, MongoDB</text>
+    <text x="18" y="166" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">&amp; Firebase ecosystems.</text>
+  </g>
+
+  <!-- Card 5: Cloud Computing -->
+  <g transform="translate(804, 8)">
+    <rect width="188" height="189" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
+    <rect x="18" y="18" width="44" height="44" rx="13" fill="#EAF5FF" />
+    <path d="M32 45H47C50 45 52 43 52 40C52 37 50 35 47 35C46 31 42 29 38 30C34 31 32 34 32 38C30 38 28 40 28 42C28 44 30 45 32 45Z" stroke="#27BFCB" stroke-width="2" stroke-linejoin="round" />
+    <text x="18" y="88" fill="#18243A" font-family="'Outfit', -apple-system, sans-serif" font-size="14.5" font-weight="700">Cloud Computing</text>
+    <text x="18" y="106" fill="#27BFCB" font-family="'Outfit', -apple-system, sans-serif" font-size="13.5" font-weight="700">&amp; AWS Infrastructure</text>
+    <text x="18" y="132" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">EC2, S3, Lambda, IAM,</text>
+    <text x="18" y="149" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">CloudWatch, SNS &amp;</text>
+    <text x="18" y="166" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">API Gateway deployments.</text>
+  </g>
+</svg>

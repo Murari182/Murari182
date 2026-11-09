@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 250" width="100%" height="250" fill="none" role="img" aria-label="CineReserve Visual Preview">
+  <title>CineReserve — React · State UI</title>
+  <rect width="460" height="250" rx="22" fill="#FFFFFF" stroke="#E5EAF2" stroke-width="1.5" />
+  <rect x="10" y="10" width="440" height="230" rx="16" fill="#FFF0F6" fill-opacity="0.6" />
+
+  <!-- Top Window Bar -->
+  <rect x="24" y="22" width="412" height="32" rx="10" fill="#FFFFFF" stroke="#E5EAF2" stroke-width="1" />
+  <circle cx="40" cy="38" r="4" fill="#4779E8" />
+  <circle cx="54" cy="38" r="4" fill="#27BFCB" />
+  <circle cx="68" cy="38" r="4" fill="#9173E8" />
+  <text x="86" y="42" fill="#52627A" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600">Interactive Auditorium Matrix</text>
+
+  <!-- Custom Domain Graphic -->
+  
+      <rect x="24" y="64" width="412" height="122" rx="12" fill="#FFFFFF" stroke="#E5EAF2" />
+      <!-- Cinema Screen Curve -->
+      <path d="M 90 82 Q 230 68 370 82" stroke="#4779E8" stroke-width="3" stroke-linecap="round" fill="none" />
+      <text x="230" y="96" text-anchor="middle" fill="#8190A5" font-family="'JetBrains Mono', monospace" font-size="9">AUDITORIUM SCREEN</text>
+      <!-- Seat Grid -->
+      <g transform="translate(118, 108)">
+        <rect x="0" y="0" width="22" height="18" rx="5" fill="#EAF5FF" stroke="#4779E8" />
+        <rect x="30" y="0" width="22" height="18" rx="5" fill="#4779E8" />
+        <rect x="60" y="0" width="22" height="18" rx="5" fill="#4779E8" />
+        <rect x="90" y="0" width="22" height="18" rx="5" fill="#EAF5FF" stroke="#4779E8" />
+        <rect x="140" y="0" width="22" height="18" rx="5" fill="#DDFBFA" stroke="#27BFCB" />
+        <rect x="170" y="0" width="22" height="18" rx="5" fill="#27BFCB" />
+        <rect x="200" y="0" width="22" height="18" rx="5" fill="#E5EAF2" />
+
+        <rect x="0" y="26" width="22" height="18" rx="5" fill="#EAF5FF" stroke="#4779E8" />
+        <rect x="30" y="26" width="22" height="18" rx="5" fill="#EAF5FF" stroke="#4779E8" />
+        <rect x="60" y="26" width="22" height="18" rx="5" fill="#9173E8" />
+        <rect x="90" y="26" width="22" height="18" rx="5" fill="#9173E8" />
+        <rect x="140" y="26" width="22" height="18" rx="5" fill="#DDFBFA" stroke="#27BFCB" />
+        <rect x="170" y="26" width="22" height="18" rx="5" fill="#DDFBFA" stroke="#27BFCB" />
+        <rect x="200" y="26" width="22" height="18" rx="5" fill="#EAF5FF" stroke="#4779E8" />
+      </g>
+    
+
+  <!-- Bottom Caption Strip -->
+  <rect x="24" y="196" width="412" height="32" rx="10" fill="#FFFFFF" stroke="#E5EAF2" stroke-width="1" />
+  <text x="38" y="216" fill="#18243A" font-family="'Outfit', -apple-system, sans-serif" font-size="13" font-weight="700">CineReserve</text>
+  <text x="422" y="216" text-anchor="end" fill="#4779E8" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">React · State UI</text>
+</svg>

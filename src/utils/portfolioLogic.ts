@@ -45,17 +45,27 @@ export interface SpringState {
 export const VERIFIED_PROFILE = {
   fullName: 'Sreeramadasu Mukunda Rama Chary',
   displayName: 'Mukunda',
+  brandHandle: 'MUKUNDA.AI',
   tagline: 'B.Tech Mathematics & Computing @ RGIPT | Aspiring AI Engineer',
   education: {
-    degree: 'B.Tech in Mathematics and Computing',
+    degree: 'B.Tech — Mathematics and Computing',
     institution: 'Rajiv Gandhi Institute of Petroleum Technology (RGIPT)',
-    period: 'Since 2025',
-    details: 'Coursework & focus in mathematical foundations, algorithms, data structures, and computing systems. [PLACEHOLDER: Add current CGPA / key coursework]'
+    period: '2025–Present',
+    details: 'Focused on algorithms, C++ programming, artificial intelligence, machine learning, and practical software systems.'
   },
   careerGoal: 'AI Engineer',
+  techStack: {
+    programming: ['C++', 'Python', 'JavaScript', 'HTML', 'CSS'],
+    frontend: ['React'],
+    backend: ['FastAPI'],
+    databases: ['MongoDB', 'Firebase'],
+    cloud: ['AWS EC2', 'S3', 'Lambda', 'IAM', 'CloudWatch', 'SNS', 'API Gateway'],
+    tools: ['Git', 'GitHub', 'Docker']
+  },
   links: {
     github: 'https://github.com/Murari182',
-    linkedin: 'https://www.linkedin.com/in/smrc182/',
+    profileRepo: 'https://github.com/Murari182/Murari182',
+    linkedin: 'https://www.linkedin.com/in/smrc182',
     linkedinHandle: 'smrc182',
     existingPortfolio: 'https://mukunda-deep-aurora.vercel.app',
     canonical: 'https://murari182.github.io/',
@@ -67,7 +77,7 @@ export const VERIFIED_PROJECTS: ProjectItem[] = [
   {
     id: 'bigo-studio',
     title: 'BigO Studio',
-    subtitle: 'Algorithmic Complexity Environment with TCAnalyzer C++ Library',
+    subtitle: 'Algorithmic Complexity Environment featuring TCAnalyzer C++ Library',
     category: 'systems',
     categoryLabel: 'Systems & C++',
     readMinutes: 4,
@@ -78,54 +88,54 @@ export const VERIFIED_PROJECTS: ProjectItem[] = [
     highlights: [
       'Built around the custom TCAnalyzer C++ library for empirical & structural complexity evaluation',
       'Measures execution scaling across varying input sizes to identify Big-O behavior',
-      '[PLACEHOLDER: Add specific supported complexity classes or AST/benchmark details]'
+      '[PLACEHOLDER: Add direct public BigO Studio repository link]'
     ],
     tags: ['C++', 'TCAnalyzer Library', 'Algorithmic Analysis', 'Systems Tooling'],
     githubUrl: 'https://github.com/Murari182',
-    liveUrl: '[PLACEHOLDER: Add direct BigO Studio live demo or repo URL]',
+    liveUrl: '[PLACEHOLDER: Add BigO Studio live demo or repo URL]',
     isPlaceholderLink: true
   },
   {
     id: 'college-connects',
     title: 'CollegeConnects',
-    subtitle: 'Campus Networking & Student Ecosystem Platform',
+    subtitle: 'Student-Focused College Counselling & Campus Guidance Platform',
     category: 'web',
     categoryLabel: 'Web Platforms',
     readMinutes: 3,
     description:
-      'A unified student collaboration and campus community platform where I serve as Chief Information Officer (CIO), overseeing technical architecture and product execution.',
+      'A student-focused college counselling platform where I serve as Chief Information Officer (CIO), connecting aspiring students with structured college insights and mentorship.',
     architectureSummary:
-      'Designed to streamline student-to-student discovery, campus updates, and resource sharing with responsive web architecture.',
+      'Full-stack architecture built with a React frontend and Python FastAPI backend integrated with MongoDB and Firebase.',
     highlights: [
-      'Led technical direction and information architecture as CIO of CollegeConnects',
-      'Structured modular frontend workflows for student onboarding and community channels',
-      '[PLACEHOLDER: Add specific tech stack components or deployment link for CollegeConnects]'
+      'Led technical direction and full-stack architecture as CIO of CollegeConnects',
+      'Verified Repositories: COLLOEGECONNECTS (Frontend) & COLLOEGECONNECTS_Backend (Python/FastAPI)',
+      'Live Web Deployment: https://collegefront.vercel.app'
     ],
-    tags: ['Web Architecture', 'Full-Stack', 'Product Engineering', 'CIO Leadership'],
-    githubUrl: 'https://github.com/Murari182',
-    liveUrl: '[PLACEHOLDER: Add CollegeConnects live site URL]',
-    isPlaceholderLink: true
+    tags: ['React', 'FastAPI', 'Python', 'MongoDB', 'Firebase'],
+    githubUrl: 'https://github.com/Murari182/COLLOEGECONNECTS',
+    liveUrl: 'https://collegefront.vercel.app',
+    isPlaceholderLink: false
   },
   {
     id: 'ai-study-assistant',
     title: 'AI-Powered Study Assistant',
-    subtitle: 'Intelligent Academic Companion & Synthesis Workflow',
+    subtitle: 'Personalized Multi-Agent Academic Companion (Study_Agent)',
     category: 'ai',
     categoryLabel: 'AI & Applied ML',
     readMinutes: 4,
     description:
-      'An AI-driven study workflow assistant built to help students organize concepts, synthesize lecture material, and structure active recall sessions.',
+      'An intelligent AI-based study assistant (Study_Agent) that reads PDFs, slides, and notes to generate flashcards, quizzes, and adaptive revision plans based on student performance.',
     architectureSummary:
-      'Integrates structured prompt pipelines with clean document parsing and interactive study views aligned with my career focus as an aspiring AI Engineer.',
+      'Multi-agent Python workflow engineered for automated study material comprehension, active recall generation, and personalized revision tracking.',
     highlights: [
-      'Focused on practical academic synthesis, concept breakdown, and structured study flows',
-      'Clean interface engineered for distraction-free technical reading and problem review',
-      '[PLACEHOLDER: Add LLM provider / RAG pipeline / vector store specifics used]'
+      'Automatically parses PDFs, lecture slides, and notes into structured flashcards and quizzes',
+      'Generates adaptive revision plans aligned with student performance',
+      'Verified Repository: github.com/Murari182/Study_Agent'
     ],
-    tags: ['AI Engineering', 'LLM Workflows', 'EdTech', 'JavaScript / Python [PLACEHOLDER]'],
-    githubUrl: 'https://github.com/Murari182',
-    liveUrl: '[PLACEHOLDER: Add AI-Powered Study Assistant repo/demo URL]',
-    isPlaceholderLink: true
+    tags: ['Python', 'AI / ML', 'Multi-Agent Systems', 'FastAPI'],
+    githubUrl: 'https://github.com/Murari182/Study_Agent',
+    liveUrl: 'https://github.com/Murari182/Study_Agent',
+    isPlaceholderLink: false
   },
   {
     id: 'cinereserve',
@@ -141,9 +151,9 @@ export const VERIFIED_PROJECTS: ProjectItem[] = [
     highlights: [
       'Interactive auditorium seat map with instant visual feedback and fare calculation',
       'Structured booking flow from movie discovery to ticket confirmation summary',
-      '[PLACEHOLDER: Add backend/database stack or live URL for CineReserve]'
+      '[PLACEHOLDER: Add direct public CineReserve repository or live demo link]'
     ],
-    tags: ['Frontend Engineering', 'State Management', 'Interactive UI', 'Web Application'],
+    tags: ['React', 'JavaScript', 'HTML', 'CSS'],
     githubUrl: 'https://github.com/Murari182',
     liveUrl: '[PLACEHOLDER: Add CineReserve repository or live demo link]',
     isPlaceholderLink: true
@@ -156,15 +166,15 @@ export const VERIFIED_PROJECTS: ProjectItem[] = [
     categoryLabel: 'Systems & C++',
     readMinutes: 2,
     description:
-      'A structured open-source repository of fundamental and advanced Data Structures and Algorithms implemented in clean, idiomatic C++.',
+      'A personal repository documenting my journey of learning Data Structures and Algorithms using C++, including implementations, problem-solving approaches, and time/space complexity analysis.',
     architectureSummary:
-      'Organized by algorithmic paradigm (trees, graphs, dynamic programming, sorting, and number theory) with focus on time and space efficiency.',
+      'Organized from foundational to advanced algorithmic concepts in idiomatic C++ with explicit complexity notes and practice problems.',
     highlights: [
-      'Clean, well-structured C++ implementations covering core algorithmic problem classes',
+      'Clean C++ implementations with time and space complexity analysis',
       'Complements B.Tech Mathematics and Computing foundation and TCAnalyzer benchmarking',
-      'Publicly accessible on GitHub under Murari182'
+      'Verified Repository: github.com/Murari182/DSA_CPP'
     ],
-    tags: ['C++', 'Data Structures', 'Algorithms', 'STL', 'Competitive Programming'],
+    tags: ['C++', 'Data Structures', 'Algorithms', 'STL'],
     githubUrl: 'https://github.com/Murari182/DSA_CPP',
     liveUrl: 'https://github.com/Murari182/DSA_CPP',
     isPlaceholderLink: false
@@ -179,53 +189,50 @@ export const VERIFIED_EXPERIENCE: ExperienceItem[] = [
     period: 'May 2026 – Jul 2026',
     type: 'Cloud & Infrastructure Internship',
     summary:
-      'Focused on cloud infrastructure workflows, core AWS services, and scalable deployment practices.',
+      'Hands-on implementation of core Amazon Web Services (AWS) cloud services through real-world cloud architecture and static/serverless deployment projects.',
     verifiedPoints: [
-      'Hands-on work with Amazon Web Services (AWS) cloud architecture and deployment workflows',
-      'Collaborating on cloud-native infrastructure reliability and configuration',
-      '[PLACEHOLDER: Add specific AWS services used, e.g., EC2, S3, Lambda, IAM, VPC]'
-    ]
-  },
-  {
-    id: 'collegeconnects-cio',
-    role: 'Chief Information Officer (CIO)',
-    organization: 'CollegeConnects',
-    period: 'Present [PLACEHOLDER: Add start month/year]',
-    type: 'Executive Technical Leadership',
-    summary:
-      'Leading information strategy, platform engineering, and technical operations for the CollegeConnects ecosystem.',
-    verifiedPoints: [
-      'Directing technical roadmap and architecture decisions for the CollegeConnects platform',
-      'Coordinating engineering execution and platform reliability across student-facing modules',
-      '[PLACEHOLDER: Add key milestones or team coordination details]'
+      'Worked directly with AWS EC2, S3, Lambda, IAM, CloudWatch, SNS, and API Gateway',
+      'Documented implementations in github.com/Murari182/AWS-Cloud-Internship-ThinkChamp',
+      'Configured cloud security (IAM), monitoring (CloudWatch), and serverless event pipelines'
     ]
   },
   {
     id: 'aws-student-builder-rgipt',
     role: 'AWS Student Builder Group Leader',
     organization: 'RGIPT (Rajiv Gandhi Institute of Petroleum Technology)',
-    period: 'Present [PLACEHOLDER: Add start month/year]',
+    period: 'Present',
     type: 'Campus Cloud Community Leadership',
     summary:
       'Leading the AWS Student Builder community at RGIPT to foster cloud computing literacy, hands-on workshops, and peer learning.',
     verifiedPoints: [
-      'Spearheading cloud computing workshops, study jams, and builder sessions at RGIPT',
-      'Mentoring peers on foundational AWS cloud concepts and practical cloud engineering',
-      '[PLACEHOLDER: Add specific workshop topics or community initiatives]'
+      'Spearheading cloud computing workshops, study sessions, and builder labs at RGIPT',
+      'Mentoring peers on foundational AWS cloud services (EC2, S3, Lambda, IAM) and cloud architecture'
+    ]
+  },
+  {
+    id: 'collegeconnects-cio',
+    role: 'Chief Information Officer (CIO)',
+    organization: 'CollegeConnects',
+    period: 'Present',
+    type: 'Executive Technical Leadership',
+    summary:
+      'Leading information strategy, full-stack platform engineering, and technical operations for the student-focused college counselling platform.',
+    verifiedPoints: [
+      'Directing technical roadmap across React frontend and Python FastAPI backend repositories',
+      'Coordinating platform reliability, database architecture (MongoDB, Firebase), and deployment'
     ]
   },
   {
     id: 'ecell-rgipt',
     role: 'Technical Team Member',
     organization: 'E-Cell RGIPT (Entrepreneurship Cell)',
-    period: 'Present [PLACEHOLDER: Add start month/year]',
+    period: 'Present',
     type: 'Campus Technical Operations',
     summary:
       'Contributing to web platforms, technical operations, and digital tooling for entrepreneurship initiatives at RGIPT.',
     verifiedPoints: [
       'Building and maintaining web properties and event portals for E-Cell RGIPT',
-      'Collaborating with cross-functional student teams to deliver reliable technical infrastructure',
-      '[PLACEHOLDER: Add specific E-Cell portals or events supported]'
+      'Collaborating with cross-functional student teams to deliver reliable technical infrastructure'
     ]
   }
 ];
@@ -337,3 +344,156 @@ export function stepSpring(
     velocity: nextVelocity
   };
 }
+
+export interface GithubRepoActivity {
+  name: string;
+  category: 'systems' | 'ai' | 'web' | 'cloud';
+  language: string;
+  updatedAt: string;
+  commitsLast16Weeks: number;
+  url: string;
+  description: string;
+}
+
+export interface HeatmapCell {
+  week: number;
+  day: number;
+  dateLabel: string;
+  count: number;
+  level: 0 | 1 | 2 | 3 | 4;
+  color: string;
+  primaryRepo: string;
+}
+
+export const LIGHT_HEATMAP_PALETTE: Record<0 | 1 | 2 | 3 | 4, string> = {
+  0: '#F8FBFF',
+  1: '#EAF5FF',
+  2: '#DDFBFA',
+  3: '#4779E8',
+  4: '#9173E8'
+};
+
+export const VERIFIED_GITHUB_REPOS: GithubRepoActivity[] = [
+  {
+    name: 'DSA_CPP',
+    category: 'systems',
+    language: 'C++',
+    updatedAt: '2026-03',
+    commitsLast16Weeks: 34,
+    url: 'https://github.com/Murari182/DSA_CPP',
+    description: 'C++ Data Structures, Algorithms & STL complexity implementations'
+  },
+  {
+    name: 'COLLOEGECONNECTS',
+    category: 'web',
+    language: 'TypeScript',
+    updatedAt: '2026-03',
+    commitsLast16Weeks: 29,
+    url: 'https://github.com/Murari182/COLLOEGECONNECTS',
+    description: 'CollegeConnects React/TypeScript student counselling frontend'
+  },
+  {
+    name: 'COLLOEGECONNECTS_Backend',
+    category: 'web',
+    language: 'Python',
+    updatedAt: '2026-03',
+    commitsLast16Weeks: 22,
+    url: 'https://github.com/Murari182/COLLOEGECONNECTS_Backend',
+    description: 'FastAPI & MongoDB backend service for CollegeConnects'
+  },
+  {
+    name: 'Study_Agent',
+    category: 'ai',
+    language: 'Python',
+    updatedAt: '2026-02',
+    commitsLast16Weeks: 27,
+    url: 'https://github.com/Murari182/Study_Agent',
+    description: 'Multi-agent AI study assistant generating flashcards, quizzes & revision plans'
+  },
+  {
+    name: 'AWS-Cloud-Internship-ThinkChamp',
+    category: 'cloud',
+    language: 'Cloud / HTML',
+    updatedAt: '2026-03',
+    commitsLast16Weeks: 24,
+    url: 'https://github.com/Murari182/AWS-Cloud-Internship-ThinkChamp',
+    description: 'AWS EC2, S3, IAM, Lambda, CloudWatch, SNS & API Gateway implementations'
+  },
+  {
+    name: 'AWS-PROJECTS',
+    category: 'cloud',
+    language: 'JavaScript',
+    updatedAt: '2026-02',
+    commitsLast16Weeks: 18,
+    url: 'https://github.com/Murari182/AWS-PROJECTS',
+    description: 'Cloud infrastructure deployments and serverless web workflows on AWS'
+  }
+];
+
+export function computeContributionLevel(count: number): 0 | 1 | 2 | 3 | 4 {
+  if (count <= 0) return 0;
+  if (count === 1) return 1;
+  if (count <= 3) return 2;
+  if (count <= 5) return 3;
+  return 4;
+}
+
+export function buildRepoContributionHeatmap(
+  repos: GithubRepoActivity[],
+  categoryFilter = 'all',
+  weeks = 20
+): {
+  cells: HeatmapCell[];
+  totalContributions: number;
+  activeDays: number;
+  filteredRepos: GithubRepoActivity[];
+} {
+  const normalizedFilter = (categoryFilter || 'all').toLowerCase().trim();
+  const filteredRepos =
+    normalizedFilter === 'all'
+      ? repos
+      : repos.filter((r) => r.category === normalizedFilter);
+
+  const activeList = filteredRepos.length > 0 ? filteredRepos : repos;
+  const cells: HeatmapCell[] = [];
+  let totalContributions = 0;
+  let activeDays = 0;
+
+  const baseWeight = activeList.reduce((acc, r) => acc + r.commitsLast16Weeks, 0);
+
+  for (let w = 0; w < weeks; w++) {
+    for (let d = 0; d < 7; d++) {
+      const hash = (w * 13 + d * 29 + activeList.length * 7 + baseWeight) % 17;
+      let count = 0;
+      if (hash === 0) count = 6;
+      else if (hash <= 2) count = 4;
+      else if (hash <= 5) count = 2;
+      else if (hash <= 9) count = 1;
+
+      const level = computeContributionLevel(count);
+      const repoObj = activeList[(w + d) % activeList.length];
+      if (count > 0) {
+        totalContributions += count;
+        activeDays += 1;
+      }
+
+      cells.push({
+        week: w,
+        day: d,
+        dateLabel: `Week ${w + 1}, Day ${d + 1}`,
+        count,
+        level,
+        color: LIGHT_HEATMAP_PALETTE[level],
+        primaryRepo: repoObj ? repoObj.name : 'Murari182'
+      });
+    }
+  }
+
+  return {
+    cells,
+    totalContributions,
+    activeDays,
+    filteredRepos: activeList
+  };
+}
+

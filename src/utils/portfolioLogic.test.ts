@@ -4,10 +4,14 @@ import {
   VERIFIED_PROFILE,
   VERIFIED_PROJECTS,
   VERIFIED_EXPERIENCE,
+  VERIFIED_GITHUB_REPOS,
+  LIGHT_HEATMAP_PALETTE,
   filterProjects,
   validateContactForm,
   buildMailtoUri,
-  stepSpring
+  stepSpring,
+  computeContributionLevel,
+  buildRepoContributionHeatmap
 } from './portfolioLogic';
 
 test('verified profile contains exact non-fabricated user identity and links', () => {
@@ -87,3 +91,25 @@ test('stepSpring converges smoothly toward target position', () => {
   assert.equal(state.current, 100);
   assert.equal(state.velocity, 0);
 });
+
+test('computeContributionLevel and buildRepoContributionHeatmap generate light-theme SVG heatmap cells', () => {
+  assert.equal(computeContributionLevel(0), 0);
+  assert.equal(computeContributionLevel(1), 1);
+  assert.equal(computeContributionLevel(3), 2);
+  assert.equal(computeContributionLevel(5), 3);
+  assert.equal(computeContributionLevel(8), 4);
+
+  const allHeatmap = buildRepoContributionHeatmap(VERIFIED_GITHUB_REPOS, 'all', 20);
+  assert.equal(allHeatmap.cells.length, 140);
+  assert.ok(allHeatmap.totalContributions > 0);
+  assert.ok(allHeatmap.activeDays > 0);
+  assert.equal(allHeatmap.filteredRepos.length, 6);
+  for (const cell of allHeatmap.cells) {
+    assert.equal(cell.color, LIGHT_HEATMAP_PALETTE[cell.level]);
+  }
+
+  const aiHeatmap = buildRepoContributionHeatmap(VERIFIED_GITHUB_REPOS, 'ai', 20);
+  assert.equal(aiHeatmap.filteredRepos.length, 1);
+  assert.equal(aiHeatmap.filteredRepos[0].name, 'Study_Agent');
+});
+

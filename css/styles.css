@@ -13,46 +13,50 @@
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* Light-on-Glass Palette (High contrast WCAG AA+) */
-  --bg-canvas: #f3f6fc;
-  --bg-canvas-secondary: #eaf0fa;
-  --text-primary: #0b1221;
-  --text-secondary: #2d3c56;
-  --text-muted: #52637f;
-  --accent-primary: #2563eb;
-  --accent-secondary: #6d28d9;
-  --accent-cyan: #0891b2;
-  --accent-warm: #db2777;
+  /* Exact MUKUNDA.AI Light-Theme Palette */
+  --bg-canvas: #FFFFFF;
+  --bg-canvas-secondary: #F8FBFF;
+  --surface-soft-blue: #EAF5FF;
+  --surface-light-cyan: #DDFBFA;
+  --surface-lavender: #F0EBFF;
+  --surface-pastel-violet: #E8DEFF;
+  --surface-soft-pink: #FFF0F6;
+  --text-primary: #18243A;
+  --text-secondary: #52627A;
+  --text-muted: #8190A5;
+  --accent-primary: #4779E8;
+  --accent-secondary: #9173E8;
+  --accent-cyan: #27BFCB;
+  --accent-warm: #FFF0F6;
+  --border-light: #E5EAF2;
 
   /* Liquid Glass Surface Tokens — Light Mode */
-  --glass-bg: rgba(255, 255, 255, 0.56);
-  --glass-bg-elevated: rgba(255, 255, 255, 0.74);
-  --glass-bg-pill: rgba(255, 255, 255, 0.62);
-  --glass-lens: rgba(255, 255, 255, 0.88);
-  --glass-border-outer: rgba(255, 255, 255, 0.82);
-  --glass-border-subtle: rgba(15, 23, 42, 0.08);
+  --glass-bg: rgba(255, 255, 255, 0.78);
+  --glass-bg-elevated: rgba(248, 251, 255, 0.90);
+  --glass-bg-pill: rgba(255, 255, 255, 0.84);
+  --glass-lens: #EAF5FF;
+  --glass-border-outer: #E5EAF2;
+  --glass-border-subtle: #E5EAF2;
   --glass-specular: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(255, 255, 255, 0.25) 45%,
-    rgba(255, 255, 255, 0.05) 100%
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(248, 251, 255, 0.45) 45%,
+    rgba(234, 245, 255, 0.12) 100%
   );
   --glass-shadow:
-    0 20px 48px -12px rgba(15, 23, 42, 0.09),
-    0 4px 16px -2px rgba(37, 99, 235, 0.06),
-    inset 0 1px 1px rgba(255, 255, 255, 0.92),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.45);
+    0 18px 42px -12px rgba(24, 36, 58, 0.07),
+    0 4px 14px -2px rgba(71, 121, 232, 0.06),
+    inset 0 1px 1px rgba(255, 255, 255, 0.96);
   --glass-shadow-hover:
-    0 28px 60px -12px rgba(15, 23, 42, 0.14),
-    0 8px 24px -4px rgba(37, 99, 235, 0.12),
-    inset 0 1.5px 2px rgba(255, 255, 255, 0.98),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.55);
+    0 24px 54px -12px rgba(24, 36, 58, 0.11),
+    0 8px 22px -4px rgba(71, 121, 232, 0.12),
+    inset 0 1.5px 2px rgba(255, 255, 255, 1);
 
-  /* Ambient Orbs */
-  --orb-blue: rgba(37, 99, 235, 0.36);
-  --orb-violet: rgba(124, 58, 237, 0.32);
-  --orb-cyan: rgba(6, 182, 212, 0.32);
-  --orb-pink: rgba(236, 72, 153, 0.24);
+  /* Soft Pastel Ambient Orbs */
+  --orb-blue: rgba(234, 245, 255, 0.95);
+  --orb-violet: rgba(240, 235, 255, 0.92);
+  --orb-cyan: rgba(221, 251, 250, 0.90);
+  --orb-pink: rgba(255, 240, 246, 0.88);
 
   /* Radii & Spacing */
   --radius-card: 28px;
@@ -906,6 +910,162 @@ html[data-theme="dark"] .nav-pill-track {
   gap: 12px;
   padding-top: 16px;
   border-top: 1px solid var(--glass-border-subtle);
+}
+
+/* ==========================================================================
+   SVG-Based GitHub Contribution Heatmap Visualization & Project Thumbnails
+   ========================================================================== */
+.github-heatmap-panel {
+  padding: 28px 32px;
+  margin-bottom: 28px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(248, 251, 255, 0.88));
+  border: 1px solid var(--border-light);
+}
+
+.heatmap-header-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.heatmap-stats-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.heatmap-stat-chip {
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-soft-blue);
+  border: 1px solid var(--border-light);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.heatmap-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.heatmap-domain-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.heatmap-domain-btn {
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-light);
+  background: #F8FBFF;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s var(--spring-ease);
+}
+
+.heatmap-domain-btn[aria-pressed="true"],
+.heatmap-domain-btn:hover {
+  background: var(--surface-soft-blue);
+  color: var(--accent-primary);
+  border-color: rgba(71, 121, 232, 0.35);
+}
+
+.heatmap-svg-wrap {
+  width: 100%;
+  overflow-x: auto;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  margin-bottom: 14px;
+}
+
+.heatmap-svg-wrap svg {
+  width: 100%;
+  min-width: 680px;
+  height: auto;
+  display: block;
+}
+
+.heatmap-cell-rect {
+  cursor: pointer;
+  transition: transform 0.15s ease, stroke 0.15s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.heatmap-cell-rect:hover,
+.heatmap-cell-rect:focus {
+  stroke: #18243A;
+  stroke-width: 1.5px;
+  transform: scale(1.16);
+  outline: none;
+}
+
+.heatmap-inspector-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: 14px;
+  background: #F8FBFF;
+  border: 1px solid var(--border-light);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.repo-activity-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.repo-activity-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: #F8FBFF;
+  border: 1px solid var(--border-light);
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: transform 0.18s var(--spring-ease), background-color 0.18s ease;
+}
+
+.repo-activity-card:hover {
+  transform: translateY(-2px);
+  background: var(--surface-soft-blue);
+}
+
+.project-visual-thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid var(--border-light);
+  margin-bottom: 14px;
+  display: block;
+  background: #FFFFFF;
 }
 
 /* ==========================================================================

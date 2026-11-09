@@ -15,6 +15,10 @@ function copyStaticPortfolioDirs() {
           fs.cpSync(src, dest, { recursive: true });
         }
       }
+      const readmeSrc = path.resolve(rootDir, 'README.md');
+      if (fs.existsSync(readmeSrc)) {
+        fs.cpSync(readmeSrc, path.resolve(outDir, 'README.md'));
+      }
     }
   };
 }

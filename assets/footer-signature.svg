@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 110" width="100%" height="110" fill="none" role="img" aria-label="Designed & Built by Mukunda — Engineering Intelligence. Building Possibilities.">
+  <title>Designed &amp; Built by Mukunda — Engineering Intelligence. Building Possibilities.</title>
+  <defs>
+    <linearGradient id="footerWaveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EAF5FF" />
+      <stop offset="35%" stop-color="#DDFBFA" />
+      <stop offset="70%" stop-color="#F0EBFF" />
+      <stop offset="100%" stop-color="#FFF0F6" />
+    </linearGradient>
+    <linearGradient id="footerLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4779E8" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#27BFCB" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#9173E8" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="110" rx="22" fill="#FFFFFF" stroke="#E5EAF2" stroke-width="1.5" />
+  <rect x="6" y="6" width="988" height="98" rx="18" fill="url(#footerWaveGrad)" fill-opacity="0.55" />
+  <line x1="220" y1="22" x2="780" y2="22" stroke="url(#footerLineGrad)" stroke-width="1.5" />
+
+  <text x="500" y="52" text-anchor="middle" fill="#18243A" font-family="'Outfit', -apple-system, sans-serif" font-size="16.5" font-weight="700" letter-spacing="0.01em">
+    Designed &amp; Built by Mukunda
+  </text>
+  <text x="500" y="75" text-anchor="middle" fill="#52627A" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="13" font-weight="600" font-style="italic">
+    Engineering Intelligence. Building Possibilities.
+  </text>
+  <text x="500" y="94" text-anchor="middle" fill="#4779E8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">
+    https://murari182.github.io/
+  </text>
+</svg>

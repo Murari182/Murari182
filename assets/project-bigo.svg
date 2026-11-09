@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 250" width="100%" height="250" fill="none" role="img" aria-label="BigO Studio Visual Preview">
+  <title>BigO Studio — O(1) · O(N log N)</title>
+  <rect width="460" height="250" rx="22" fill="#FFFFFF" stroke="#E5EAF2" stroke-width="1.5" />
+  <rect x="10" y="10" width="440" height="230" rx="16" fill="#EAF5FF" fill-opacity="0.6" />
+
+  <!-- Top Window Bar -->
+  <rect x="24" y="22" width="412" height="32" rx="10" fill="#FFFFFF" stroke="#E5EAF2" stroke-width="1" />
+  <circle cx="40" cy="38" r="4" fill="#4779E8" />
+  <circle cx="54" cy="38" r="4" fill="#27BFCB" />
+  <circle cx="68" cy="38" r="4" fill="#9173E8" />
+  <text x="86" y="42" fill="#52627A" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600">TCAnalyzer.hpp · Empirical Complexity</text>
+
+  <!-- Custom Domain Graphic -->
+  
+      <rect x="24" y="64" width="412" height="122" rx="12" fill="#FFFFFF" stroke="#E5EAF2" />
+      <!-- Complexity Growth Curves -->
+      <line x1="52" y1="166" x2="408" y2="166" stroke="#E5EAF2" stroke-width="1.5" />
+      <line x1="52" y1="80" x2="52" y2="166" stroke="#E5EAF2" stroke-width="1.5" />
+      <!-- O(N^2) curve -->
+      <path d="M 52 166 Q 140 160 220 82" stroke="#9173E8" stroke-width="2.2" stroke-dasharray="4 4" fill="none" />
+      <!-- O(N log N) curve -->
+      <path d="M 52 166 Q 210 152 392 92" stroke="#4779E8" stroke-width="2.8" fill="none" />
+      <!-- O(log N) curve -->
+      <path d="M 52 166 Q 150 138 392 134" stroke="#27BFCB" stroke-width="2.5" fill="none" />
+      <rect x="276" y="76" width="142" height="44" rx="8" fill="#F8FBFF" stroke="#E5EAF2" />
+      <text x="288" y="95" fill="#18243A" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">TCAnalyzer C++</text>
+      <text x="288" y="111" fill="#4779E8" font-family="'JetBrains Mono', monospace" font-size="10">Scaling: O(N log N)</text>
+    
+
+  <!-- Bottom Caption Strip -->
+  <rect x="24" y="196" width="412" height="32" rx="10" fill="#FFFFFF" stroke="#E5EAF2" stroke-width="1" />
+  <text x="38" y="216" fill="#18243A" font-family="'Outfit', -apple-system, sans-serif" font-size="13" font-weight="700">BigO Studio</text>
+  <text x="422" y="216" text-anchor="end" fill="#4779E8" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">O(1) · O(N log N)</text>
+</svg>

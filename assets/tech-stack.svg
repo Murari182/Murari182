@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="100%" height="320" fill="none" role="img" aria-label="Mukunda Verified Technology Constellation: Programming, Frontend, Backend, Database, Cloud, and Tools">
+  <title>Technology Constellation — Verified Engineering Toolkit</title>
+
+  <rect width="1000" height="320" rx="24" fill="#FFFFFF" stroke="#E5EAF2" stroke-width="1.5" />
+
+  <!-- Row 1: Programming (Left) & Frontend + Backend (Right) -->
+  <!-- Category 1: PROGRAMMING -->
+  <g transform="translate(24, 22)">
+    <rect width="464" height="128" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
+    <circle cx="26" cy="28" r="5" fill="#4779E8" />
+    <text x="40" y="32" fill="#4779E8" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" letter-spacing="0.08em">PROGRAMMING LANGUAGES</text>
+
+    <!-- Chips: C++, Python, JavaScript, HTML, CSS -->
+    <g transform="translate(20, 52)" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="13" font-weight="700" fill="#18243A">
+      <rect x="0" y="0" width="72" height="38" rx="12" fill="#EAF5FF" stroke="#E5EAF2" />
+      <text x="36" y="24" text-anchor="middle">C++</text>
+
+      <rect x="82" y="0" width="88" height="38" rx="12" fill="#EAF5FF" stroke="#E5EAF2" />
+      <text x="126" y="24" text-anchor="middle">Python</text>
+
+      <rect x="180" y="0" width="104" height="38" rx="12" fill="#DDFBFA" stroke="#E5EAF2" />
+      <text x="232" y="24" text-anchor="middle">JavaScript</text>
+
+      <rect x="294" y="0" width="68" height="38" rx="12" fill="#F0EBFF" stroke="#E5EAF2" />
+      <text x="328" y="24" text-anchor="middle">HTML</text>
+
+      <rect x="372" y="0" width="56" height="38" rx="12" fill="#FFF0F6" stroke="#E5EAF2" />
+      <text x="400" y="24" text-anchor="middle">CSS</text>
+    </g>
+    <text x="22" y="112" fill="#8190A5" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Used across DSA_CPP, TCAnalyzer, Study_Agent &amp; web platforms</text>
+  </g>
+
+  <!-- Category 2: FRONTEND & BACKEND & DATABASE -->
+  <g transform="translate(512, 22)">
+    <rect width="144" height="128" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
+    <circle cx="22" cy="28" r="5" fill="#27BFCB" />
+    <text x="34" y="32" fill="#27BFCB" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" letter-spacing="0.06em">FRONTEND</text>
+    <rect x="20" y="52" width="104" height="38" rx="12" fill="#DDFBFA" stroke="#E5EAF2" />
+    <text x="72" y="76" text-anchor="middle" fill="#18243A" font-family="'Plus Jakarta Sans', sans-serif" font-size="13.5" font-weight="700">React</text>
+    <text x="20" y="112" fill="#8190A5" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Component UI</text>
+  </g>
+
+  <g transform="translate(670, 22)">
+    <rect width="144" height="128" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
+    <circle cx="22" cy="28" r="5" fill="#9173E8" />
+    <text x="34" y="32" fill="#9173E8" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" letter-spacing="0.06em">BACKEND</text>
+    <rect x="20" y="52" width="104" height="38" rx="12" fill="#F0EBFF" stroke="#E5EAF2" />
+    <text x="72" y="76" text-anchor="middle" fill="#18243A" font-family="'Plus Jakarta Sans', sans-serif" font-size="13.5" font-weight="700">FastAPI</text>
+    <text x="20" y="112" fill="#8190A5" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">REST &amp; AI APIs</text>
+  </g>
+
+  <g transform="translate(828, 22)">
+    <rect width="148" height="128" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
+    <circle cx="22" cy="28" r="5" fill="#4779E8" />
+    <text x="34" y="32" fill="#4779E8" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" letter-spacing="0.06em">DATABASE</text>
+    <rect x="16" y="48" width="116" height="28" rx="9" fill="#EAF5FF" stroke="#E5EAF2" />
+    <text x="74" y="66" text-anchor="middle" fill="#18243A" font-family="'Plus Jakarta Sans', sans-serif" font-size="12.5" font-weight="700">MongoDB</text>
+    <rect x="16" y="82" width="116" height="28" rx="9" fill="#FFF0F6" stroke="#E5EAF2" />
+    <text x="74" y="100" text-anchor="middle" fill="#18243A" font-family="'Plus Jakarta Sans', sans-serif" font-size="12.5" font-weight="700">Firebase</text>
+  </g>
+
+  <!-- Row 2: CLOUD (AWS) & TOOLS -->
+  <g transform="translate(24, 168)">
+    <rect width="676" height="130" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
+    <circle cx="26" cy="28" r="5" fill="#27BFCB" />
+    <text x="40" y="32" fill="#18243A" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" letter-spacing="0.08em">CLOUD COMPUTING (AMAZON WEB SERVICES)</text>
+
+    <g transform="translate(20, 50)" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#18243A">
+      <rect x="0" y="0" width="84" height="38" rx="12" fill="#EAF5FF" stroke="#E5EAF2" />
+      <text x="42" y="24" text-anchor="middle">AWS EC2</text>
+
+      <rect x="92" y="0" width="72" height="38" rx="12" fill="#DDFBFA" stroke="#E5EAF2" />
+      <text x="128" y="24" text-anchor="middle">AWS S3</text>
+
+      <rect x="172" y="0" width="86" height="38" rx="12" fill="#F0EBFF" stroke="#E5EAF2" />
+      <text x="215" y="24" text-anchor="middle">Lambda</text>
+
+      <rect x="266" y="0" width="64" height="38" rx="12" fill="#FFF0F6" stroke="#E5EAF2" />
+      <text x="298" y="24" text-anchor="middle">IAM</text>
+
+      <rect x="338" y="0" width="104" height="38" rx="12" fill="#EAF5FF" stroke="#E5EAF2" />
+      <text x="390" y="24" text-anchor="middle">CloudWatch</text>
+
+      <rect x="450" y="0" width="66" height="38" rx="12" fill="#DDFBFA" stroke="#E5EAF2" />
+      <text x="483" y="24" text-anchor="middle">SNS</text>
+
+      <rect x="524" y="0" width="112" height="38" rx="12" fill="#E8DEFF" stroke="#E5EAF2" />
+      <text x="580" y="24" text-anchor="middle">API Gateway</text>
+    </g>
+    <text x="22" y="112" fill="#8190A5" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Applied in ThinkChamp AWS Cloud Internship &amp; RGIPT AWS Student Builder Group</text>
+  </g>
+
+  <g transform="translate(716, 168)">
+    <rect width="260" height="130" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
+    <circle cx="24" cy="28" r="5" fill="#9173E8" />
+    <text x="38" y="32" fill="#9173E8" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" letter-spacing="0.08em">DEVELOPER TOOLS</text>
+
+    <g transform="translate(18, 50)" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#18243A">
+      <rect x="0" y="0" width="62" height="38" rx="12" fill="#EAF5FF" stroke="#E5EAF2" />
+      <text x="31" y="24" text-anchor="middle">Git</text>
+
+      <rect x="70" y="0" width="76" height="38" rx="12" fill="#F0EBFF" stroke="#E5EAF2" />
+      <text x="108" y="24" text-anchor="middle">GitHub</text>
+
+      <rect x="154" y="0" width="70" height="38" rx="12" fill="#DDFBFA" stroke="#E5EAF2" />
+      <text x="189" y="24" text-anchor="middle">Docker</text>
+    </g>
+    <text x="20" y="112" fill="#8190A5" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Version control, CI/CD &amp; containers</text>
+  </g>
+</svg>

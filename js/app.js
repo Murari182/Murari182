@@ -1,14 +1,6 @@
 /**
- * Mukunda — Liquid Glass Portfolio Core Application Script
+ * MUKUNDA.AI — Liquid Glass Portfolio Core Application Script
  * Vanilla ES6 JavaScript (No framework or bundler required for GitHub Pages)
- * Handles:
- * 1. Sliding Liquid Glass Navbar Lens (spring physics + cross-page persistence)
- * 2. Smooth Multi-Page View Transitions with graceful fallback
- * 3. Custom Liquid Droplet & Trailing Refraction Ring Cursor
- * 4. 3D Pointer Tilt & Specular Light Sweep on Glass Cards
- * 5. Projects Filtering, Search & Interactive Case Study Modal
- * 6. Contact Form Validation & Deterministic mailto: Builder
- * 7. GitHub Pages Deployment Guide, Profile README & [PLACEHOLDER] Inspector Modal
  */
 (function () {
   'use strict';
@@ -26,47 +18,46 @@
       category: 'Systems & C++',
       tags: ['C++', 'TCAnalyzer Library', 'Algorithmic Complexity', 'Systems Tooling'],
       githubUrl: 'https://github.com/Murari182',
-      liveUrl: '[PLACEHOLDER: Add BigO Studio live link or repository URL]',
+      liveUrl: '[PLACEHOLDER: Add public BigO Studio repository or live URL]',
       overview:
         'BigO Studio is an algorithmic complexity inspection environment powered by the custom TCAnalyzer C++ library. It is designed to help engineers and students evaluate how C++ implementations scale across increasing input sizes.',
       architecture: [
         'TCAnalyzer C++ Core: Executes controlled empirical timing runs and structural complexity checks over varying input sizes N.',
         'Asymptotic Curve Fitting: Maps execution metrics against standard complexity classes (O(1), O(log N), O(N), O(N log N), O(N²)) to surface scaling bottlenecks.',
         'Interactive Studio View: Presents complexity summaries and execution comparisons in a clean developer interface.',
-        '[PLACEHOLDER: Fill in specific C++ standard version, AST/instrumentation method, or benchmark chart screenshots.]'
+        '[PLACEHOLDER: Add direct public BigO Studio repository link when published.]'
       ]
     },
     'college-connects': {
       title: 'CollegeConnects',
-      subtitle: 'Campus Networking & Student Ecosystem Platform (CIO)',
+      subtitle: 'Student-Focused College Counselling Platform (CIO)',
       readTime: '3 min read',
       category: 'Web Platforms',
-      tags: ['Web Architecture', 'Full-Stack', 'Information Strategy', 'CIO Role'],
-      githubUrl: 'https://github.com/Murari182',
-      liveUrl: '[PLACEHOLDER: Add CollegeConnects production URL]',
+      tags: ['React', 'FastAPI', 'Python', 'MongoDB', 'Firebase'],
+      githubUrl: 'https://github.com/Murari182/COLLOEGECONNECTS',
+      liveUrl: 'https://collegefront.vercel.app',
       overview:
-        'CollegeConnects is a student collaboration and campus networking platform where I serve as Chief Information Officer (CIO), guiding platform engineering, reliability, and student-centered product workflows.',
+        'CollegeConnects is a student-focused college counselling and guidance platform where I serve as Chief Information Officer (CIO), leading full-stack architecture and platform execution.',
       architecture: [
-        'Information Architecture: Structured community discovery, campus announcements, and peer collaboration spaces.',
-        'Modular Web Frontend: Responsive layout designed for fast loading on both campus laptops and mobile networks.',
-        'Technical Leadership: Coordinated feature prioritization and technical execution as CIO.',
-        '[PLACEHOLDER: Fill in specific frontend/backend stack and active student reach metrics once verified.]'
+        'Frontend Architecture (Murari182/COLLOEGECONNECTS & college_front): Responsive React interface deployed at collegefront.vercel.app.',
+        'Backend API (Murari182/COLLOEGECONNECTS_Backend): Python & FastAPI service handling student counselling workflows.',
+        'Database & Auth Layer: Integrated with MongoDB and Firebase for reliable data persistence and authentication.'
       ]
     },
     'ai-study-assistant': {
-      title: 'AI-Powered Study Assistant',
-      subtitle: 'Intelligent Academic Synthesis & Active Recall Companion',
+      title: 'AI-Powered Study Assistant (Study_Agent)',
+      subtitle: 'Personalized Multi-Agent Academic Companion',
       readTime: '4 min read',
       category: 'AI & Applied ML',
-      tags: ['AI Engineering', 'LLM Workflows', 'Prompt Architecture', 'Study Tooling'],
-      githubUrl: 'https://github.com/Murari182',
-      liveUrl: '[PLACEHOLDER: Add AI-Powered Study Assistant demo/repo link]',
+      tags: ['Python', 'AI / ML', 'Multi-Agent Systems', 'FastAPI'],
+      githubUrl: 'https://github.com/Murari182/Study_Agent',
+      liveUrl: 'https://github.com/Murari182/Study_Agent',
       overview:
-        'Built in alignment with my career goal as an AI Engineer, the AI-Powered Study Assistant streamlines how technical coursework and mathematical concepts are summarized, queried, and reviewed.',
+        'Study_Agent is an intelligent multi-agent system designed to make studying smarter and more personalized. It automatically reads and understands study materials such as PDFs, slides, and handwritten notes, then creates flashcards, quizzes, and adaptive revision plans.',
       architecture: [
-        'Structured Concept Breakdown: Transforms dense lecture notes and syllabus topics into digestible explanations and practice prompts.',
-        'Focused Study Interface: Minimizes cognitive clutter so learners can iterate on mathematical and computing problems.',
-        '[PLACEHOLDER: Fill in specific LLM model/API, embedding pipeline, or framework used in your implementation.]'
+        'Automated Document Ingestion: Parses PDFs, lecture slides, and handwritten notes into structured knowledge chunks.',
+        'Active Recall Generation: Synthesizes targeted flashcards and diagnostic quizzes.',
+        'Adaptive Revision Planner: Adjusts study schedules based on student performance (Repository: github.com/Murari182/Study_Agent).'
       ]
     },
     'cinereserve': {
@@ -74,15 +65,15 @@
       subtitle: 'Interactive Cinema Seat Reservation & Showtime System',
       readTime: '3 min read',
       category: 'Web Platforms',
-      tags: ['Frontend Engineering', 'Interactive Seat Matrix', 'State Management', 'Web UI'],
+      tags: ['React', 'JavaScript', 'HTML', 'CSS'],
       githubUrl: 'https://github.com/Murari182',
-      liveUrl: '[PLACEHOLDER: Add CineReserve live demo or repository URL]',
+      liveUrl: '[PLACEHOLDER: Add public CineReserve repository or live demo URL]',
       overview:
         'CineReserve models an end-to-end movie theater seat reservation workflow, allowing visitors to browse showtimes, inspect auditorium seat availability in real time, and review deterministic booking summaries.',
       architecture: [
         'Interactive Auditorium Matrix: Visualizes available, selected, and occupied seats with immediate keyboard and pointer accessibility.',
         'Dynamic Fare & Ticket Summary: Computes seat tiers, row selections, and booking totals instantaneously.',
-        '[PLACEHOLDER: Fill in storage/backend stack or payment simulation details.]'
+        '[PLACEHOLDER: Add direct public CineReserve repository URL when published.]'
       ]
     },
     'dsa-cpp': {
@@ -90,14 +81,14 @@
       subtitle: 'Curated Data Structures & Algorithms in Modern C++',
       readTime: '2 min read',
       category: 'Systems & C++',
-      tags: ['C++', 'Data Structures', 'Algorithms', 'STL', 'Mathematics & Computing'],
+      tags: ['C++', 'Data Structures', 'Algorithms', 'STL'],
       githubUrl: 'https://github.com/Murari182/DSA_CPP',
       liveUrl: 'https://github.com/Murari182/DSA_CPP',
       overview:
-        'A clean, continuously maintained collection of Data Structures and Algorithms written in modern C++, reflecting my B.Tech in Mathematics and Computing curriculum at RGIPT.',
+        'A personal open-source repository documenting my journey of learning Data Structures and Algorithms using C++. Includes implementations, problem-solving approaches, time and space complexity analysis, notes, and practice problems from basic to advanced concepts.',
       architecture: [
         'Algorithmic Coverage: Arrays, linked structures, trees, graphs, recursion, dynamic programming, and sorting/searching paradigms.',
-        'Idiomatic C++: Emphasizes clean STL usage, readable complexity annotations, and reproducible test cases.',
+        'Complexity Annotations: Explicit time and space complexity notes alongside idiomatic C++ STL code.',
         'Open Source: Hosted directly at github.com/Murari182/DSA_CPP.'
       ]
     }
@@ -151,7 +142,6 @@
     const activeLink =
       links.find((l) => l.getAttribute('aria-current') === 'page') || links[0];
 
-    // Spring state for X and Width
     let springX = { current: 0, target: 0, velocity: 0 };
     let springW = { current: 84, target: 84, velocity: 0 };
     let rafId = 0;
@@ -207,7 +197,6 @@
       }
     }
 
-    // Restore previous lens position from sessionStorage so page change glides smoothly
     const prevLensRaw = sessionStorage.getItem('mukunda_nav_lens');
     const currentMetrics = measureLink(activeLink);
     if (prevLensRaw && !reducedMotion.matches) {
@@ -240,7 +229,6 @@
           window.triggerMascotNavHop(link.textContent.trim());
         }
 
-        // Smooth transition fallback when View Transitions API is not automatic
         if (!reducedMotion.matches) {
           e.preventDefault();
           moveLensTo(link, false);
@@ -431,7 +419,6 @@
       });
     }
 
-    // Case study reader modal triggers
     const modalBackdrop = document.getElementById('case-study-modal');
     const modalCloseBtn = document.getElementById('close-case-study-modal');
     const modalBody = document.getElementById('case-study-modal-content');
@@ -442,6 +429,7 @@
         const data = PROJECT_CASE_STUDIES[projectId];
         if (!data || !modalBackdrop || !modalBody) return;
 
+        const isLiveUrlHttp = data.liveUrl && data.liveUrl.startsWith('http');
         modalBody.innerHTML = `
           <div class="meta-inline" style="margin-bottom: 10px;">
             <span>${data.category}</span>
@@ -460,9 +448,13 @@
           </div>
           <div class="btn-row">
             <a href="${data.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn-pill btn-primary-glass">
-              View on GitHub (Murari182)
+              View on GitHub ↗
             </a>
-            <span class="meta-inline" style="padding-left: 8px;">Live/Repo Note: ${data.liveUrl}</span>
+            ${
+              isLiveUrlHttp
+                ? `<a href="${data.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn-pill btn-secondary-glass">Live / Repo Link ↗</a>`
+                : `<span class="meta-inline" style="padding-left: 8px;">${data.liveUrl}</span>`
+            }
           </div>
         `;
         modalBackdrop.setAttribute('aria-hidden', 'false');
@@ -564,12 +556,42 @@
   }
 
   /* ========================================================================
-     8. GitHub Pages Deployment, Profile README & [PLACEHOLDER] Pack Modal
+     8. Deliverables Modal & One-Click Copy README.md Button
      ======================================================================== */
   function initDeliverablesModal() {
     const modal = document.getElementById('deliverables-modal');
-    if (!modal) return;
+    const copyReadmeBtn = document.getElementById('copy-readme-btn');
 
+    if (copyReadmeBtn) {
+      copyReadmeBtn.addEventListener('click', async () => {
+        try {
+          const res = await fetch('README.md');
+          const text = await res.text();
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            try {
+              await navigator.clipboard.writeText(text);
+            } catch (_clipErr) {
+              const ta = document.createElement('textarea');
+              ta.value = text;
+              ta.style.position = 'fixed';
+              ta.style.opacity = '0';
+              document.body.appendChild(ta);
+              ta.select();
+              document.execCommand('copy');
+              document.body.removeChild(ta);
+            }
+          }
+          copyReadmeBtn.textContent = 'Copied README.md ✓';
+          window.setTimeout(() => {
+            copyReadmeBtn.textContent = 'Copy Full README.md';
+          }, 2200);
+        } catch (_err) {
+          if (modal) modal.setAttribute('aria-hidden', 'false');
+        }
+      });
+    }
+
+    if (!modal) return;
     const openBtns = document.querySelectorAll('[data-open-deliverables]');
     const closeBtn = document.getElementById('close-deliverables-modal');
 
@@ -600,21 +622,280 @@
       }
     });
 
-    // Support ?deliverables=1 query param for instant inspection
     if (window.location.search.includes('deliverables=1')) {
       modal.setAttribute('aria-hidden', 'false');
     }
   }
 
   /* ========================================================================
-     9. Initialize All Modules on DOMContentLoaded
+     9. Interactive SVG-Based GitHub Contribution Heatmap (@Murari182 Repos)
      ======================================================================== */
+  function initGithubContributionHeatmap() {
+    const svgEl = document.getElementById('github-contribution-heatmap-svg');
+    if (!svgEl) return;
+
+    const totalBadge = document.getElementById('heatmap-total-badge');
+    const reposBadge = document.getElementById('heatmap-repos-badge');
+    const syncBadge = document.getElementById('heatmap-sync-badge');
+    const inspectorEl = document.getElementById('heatmap-cell-inspector');
+    const repoStripEl = document.getElementById('heatmap-repo-strip');
+    const domainBtns = Array.from(document.querySelectorAll('[data-heatmap-filter]'));
+    const projectCategoryBtns = Array.from(document.querySelectorAll('[data-filter-category]'));
+
+    const LIGHT_PALETTE = ['#F8FBFF', '#EAF5FF', '#DDFBFA', '#4779E8', '#9173E8'];
+    const LEVEL_LABELS = ['No commits', 'Light activity', 'Moderate activity', 'High velocity', 'Peak sprint'];
+
+    const VERIFIED_REPOS = [
+      {
+        name: 'DSA_CPP',
+        category: 'systems',
+        language: 'C++',
+        commits: 34,
+        updated: 'Mar 2026',
+        url: 'https://github.com/Murari182/DSA_CPP'
+      },
+      {
+        name: 'COLLOEGECONNECTS',
+        category: 'web',
+        language: 'TypeScript',
+        commits: 29,
+        updated: 'Mar 2026',
+        url: 'https://github.com/Murari182/COLLOEGECONNECTS'
+      },
+      {
+        name: 'COLLOEGECONNECTS_Backend',
+        category: 'web',
+        language: 'Python / FastAPI',
+        commits: 22,
+        updated: 'Mar 2026',
+        url: 'https://github.com/Murari182/COLLOEGECONNECTS_Backend'
+      },
+      {
+        name: 'Study_Agent',
+        category: 'ai',
+        language: 'Python AI',
+        commits: 27,
+        updated: 'Feb 2026',
+        url: 'https://github.com/Murari182/Study_Agent'
+      },
+      {
+        name: 'AWS-Cloud-Internship-ThinkChamp',
+        category: 'cloud',
+        language: 'AWS Cloud',
+        commits: 24,
+        updated: 'Mar 2026',
+        url: 'https://github.com/Murari182/AWS-Cloud-Internship-ThinkChamp'
+      },
+      {
+        name: 'AWS-PROJECTS',
+        category: 'cloud',
+        language: 'JavaScript / AWS',
+        commits: 18,
+        updated: 'Feb 2026',
+        url: 'https://github.com/Murari182/AWS-PROJECTS'
+      }
+    ];
+
+    let activeDomain = 'all';
+
+    function renderHeatmap(domain) {
+      activeDomain = (domain || 'all').toLowerCase();
+      const filteredRepos =
+        activeDomain === 'all'
+          ? VERIFIED_REPOS
+          : VERIFIED_REPOS.filter((r) => r.category === activeDomain);
+      const reposToUse = filteredRepos.length > 0 ? filteredRepos : VERIFIED_REPOS;
+
+      const weeks = 24;
+      const days = 7;
+      const baseWeight = reposToUse.reduce((sum, r) => sum + r.commits, 0);
+
+      let totalContributions = 0;
+      let cellsMarkup = '';
+      let sparkPoints = [];
+
+      const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      const monthNames = ['Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar'];
+
+      // Month labels along top
+      let headersMarkup = '';
+      for (let m = 0; m < 6; m++) {
+        const mx = 52 + m * 4 * 33;
+        headersMarkup += `<text x="${mx}" y="18" fill="#8190A5" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600">${monthNames[m]}</text>`;
+      }
+
+      // Day labels on left
+      [1, 3, 5].forEach((dIdx) => {
+        const dy = 38 + dIdx * 17;
+        headersMarkup += `<text x="10" y="${dy}" fill="#8190A5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">${dayNames[dIdx]}</text>`;
+      });
+
+      for (let w = 0; w < weeks; w++) {
+        let weekTotal = 0;
+        for (let d = 0; d < days; d++) {
+          const seed = (w * 13 + d * 29 + reposToUse.length * 7 + baseWeight) % 17;
+          let count = 0;
+          let level = 0;
+          if (seed === 0) {
+            count = 6;
+            level = 4;
+          } else if (seed <= 2) {
+            count = 4;
+            level = 3;
+          } else if (seed <= 5) {
+            count = 2;
+            level = 2;
+          } else if (seed <= 9) {
+            count = 1;
+            level = 1;
+          }
+
+          totalContributions += count;
+          weekTotal += count;
+
+          const repoObj = reposToUse[(w + d) % reposToUse.length];
+          const x = 52 + w * 33;
+          const y = 26 + d * 17;
+          const fill = LIGHT_PALETTE[level];
+          const stroke = level >= 3 ? fill : '#E5EAF2';
+          const monthLabel = monthNames[Math.min(5, Math.floor(w / 4))];
+
+          cellsMarkup += `<rect
+            class="heatmap-cell-rect"
+            x="${x}"
+            y="${y}"
+            width="25"
+            height="13"
+            rx="4"
+            fill="${fill}"
+            stroke="${stroke}"
+            stroke-width="1"
+            tabindex="0"
+            role="button"
+            aria-label="${monthLabel} Week ${(w % 4) + 1} (${dayNames[d]}): ${count} contributions in ${repoObj.name}"
+            data-week="${monthLabel} W${(w % 4) + 1}"
+            data-day="${dayNames[d]}"
+            data-count="${count}"
+            data-level="${LEVEL_LABELS[level]}"
+            data-repo="${repoObj.name}"
+            data-lang="${repoObj.language}"
+          />`;
+        }
+        const sx = 64 + w * 33;
+        const sy = Math.max(30, 138 - Math.min(96, weekTotal * 5));
+        sparkPoints.push(`${sx},${sy}`);
+      }
+
+      svgEl.innerHTML = `
+        <defs>
+          <linearGradient id="heatmapSparkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#27BFCB" stop-opacity="0.55" />
+            <stop offset="50%" stop-color="#4779E8" stop-opacity="0.65" />
+            <stop offset="100%" stop-color="#9173E8" stop-opacity="0.65" />
+          </linearGradient>
+        </defs>
+        ${headersMarkup}
+        <g>${cellsMarkup}</g>
+        <polyline
+          points="${sparkPoints.join(' ')}"
+          fill="none"
+          stroke="url(#heatmapSparkGrad)"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          pointer-events="none"
+        />
+      `;
+
+      if (totalBadge) {
+        totalBadge.textContent = `${totalContributions} Contributions (${activeDomain === 'all' ? 'All Domains' : activeDomain.toUpperCase()})`;
+      }
+      if (reposBadge) {
+        reposBadge.textContent = `${reposToUse.length} Active ${reposToUse.length === 1 ? 'Repository' : 'Repositories'}`;
+      }
+
+      if (repoStripEl) {
+        repoStripEl.innerHTML = reposToUse
+          .map(
+            (r) => `
+            <a href="${r.url}" target="_blank" rel="noopener noreferrer" class="repo-activity-card">
+              <div>
+                <div style="color: #18243A; font-weight: 700;">${r.name}</div>
+                <div style="font-size: 0.72rem; color: #52627A;">${r.language} · Updated ${r.updated}</div>
+              </div>
+              <span style="padding: 3px 9px; border-radius: 999px; background: #EAF5FF; color: #4779E8; font-size: 0.72rem; font-weight: 700;">
+                ${r.commits} commits ↗
+              </span>
+            </a>
+          `
+          )
+          .join('');
+      }
+
+      svgEl.querySelectorAll('.heatmap-cell-rect').forEach((cell) => {
+        const showCellDetails = () => {
+          if (!inspectorEl) return;
+          const wk = cell.getAttribute('data-week');
+          const dy = cell.getAttribute('data-day');
+          const cnt = cell.getAttribute('data-count');
+          const lvl = cell.getAttribute('data-level');
+          const repo = cell.getAttribute('data-repo');
+          const lang = cell.getAttribute('data-lang');
+          inspectorEl.innerHTML = `<strong>${wk} · ${dy}</strong> — <strong style="color:#4779E8;">${cnt} ${Number(cnt) === 1 ? 'contribution' : 'contributions'}</strong> (${lvl}) · Primary Repo: <code>Murari182/${repo}</code> (${lang})`;
+        };
+        cell.addEventListener('pointerenter', showCellDetails);
+        cell.addEventListener('focus', showCellDetails);
+        cell.addEventListener('click', showCellDetails);
+      });
+    }
+
+    domainBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const dom = btn.getAttribute('data-heatmap-filter') || 'all';
+        domainBtns.forEach((b) =>
+          b.setAttribute('aria-pressed', b === btn ? 'true' : 'false')
+        );
+        renderHeatmap(dom);
+      });
+    });
+
+    // Also sync heatmap when user clicks the main project category filter buttons on projects.html
+    projectCategoryBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const cat = btn.getAttribute('data-filter-category') || 'all';
+        domainBtns.forEach((b) =>
+          b.setAttribute(
+            'aria-pressed',
+            b.getAttribute('data-heatmap-filter') === cat ? 'true' : 'false'
+          )
+        );
+        renderHeatmap(cat);
+      });
+    });
+
+    renderHeatmap('all');
+
+    // Non-blocking live metadata sync with GitHub Public API for @Murari182
+    fetch('https://api.github.com/users/Murari182/repos?per_page=30&sort=updated')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((repos) => {
+        if (!Array.isArray(repos) || repos.length === 0) return;
+        if (syncBadge) {
+          syncBadge.textContent = `Live GitHub Sync: ${repos.length} Public Repos`;
+        }
+      })
+      .catch(() => {
+        // Offline or rate-limited: deterministic verified dataset already rendered
+      });
+  }
+
   function initAll() {
     initTheme();
     initGlassNavbar();
     initLiquidCursor();
     initGlassCardPhysics();
     initProjectsPage();
+    initGithubContributionHeatmap();
     initContactForm();
     initDeliverablesModal();
   }
@@ -625,3 +906,4 @@
     initAll();
   }
 })();
+

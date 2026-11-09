@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 52" width="250" height="52" fill="none" role="img" aria-label="LINKEDIN PROFILE: in/smrc182 ↗">
+  <title>LINKEDIN PROFILE — in/smrc182 ↗</title>
+  <rect x="1" y="1" width="248" height="50" rx="25" fill="#DDFBFA" stroke="#E5EAF2" stroke-width="1.5" />
+  <circle cx="28" cy="26" r="16" fill="#FFFFFF" stroke="#E5EAF2" stroke-width="1" />
+  <g transform="translate(18, 16)" stroke="#27BFCB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="2" y="2" width="16" height="16" rx="3"/><path d="M6 9v5M6 6v.01M10 14v-3a2 2 0 1 1 4 0v3M10 9v5"/>
+  </g>
+  <text x="54" y="23" fill="#8190A5" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" letter-spacing="0.06em">LINKEDIN PROFILE</text>
+  <text x="54" y="38" fill="#18243A" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="13" font-weight="700">in/smrc182 ↗</text>
+</svg>
