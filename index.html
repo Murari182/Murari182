@@ -1,22 +1,597 @@
 <!doctype html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/murari-hero.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Murari182 — Sreeramadasu Mukunda Rama Chary | AI Engineering & Mathematics</title>
-    <meta name="description" content="Official portfolio & living developer universe of Sreeramadasu Mukunda Rama Chary (Murari182). B.Tech Mathematics & Computing at RGIPT. AI, Machine Learning, and Cloud Computing." />
-    <meta name="keywords" content="Murari182, Sreeramadasu Mukunda Rama Chary, AI Engineer, Machine Learning, RGIPT, Mathematics & Computing, AWS Cloud, Developer Universe" />
-    <meta name="author" content="Sreeramadasu Mukunda Rama Chary (Murari182)" />
-    <meta name="theme-color" content="#09090D" />
+    <meta name="color-scheme" content="light" />
+    <title>Mukunda — Sreeramadasu Mukunda Rama Chary | AI &amp; Systems Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Sreeramadasu Mukunda Rama Chary (Mukunda) — B.Tech Mathematics and Computing at RGIPT, Aspiring AI Engineer, AWS Cloud Intern at ThinkChamp, and CIO at CollegeConnects."
+    />
+    <link rel="canonical" href="https://murari182.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 
-    <!-- Google Fonts Preconnect & Stylesheets -->
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mukunda Portfolio" />
+    <meta property="og:title" content="Mukunda — Sreeramadasu Mukunda Rama Chary | Liquid Glass Portfolio" />
+    <meta
+      property="og:description"
+      content="B.Tech Mathematics &amp; Computing @ RGIPT | Aspiring AI Engineer. Creator of BigO Studio (TCAnalyzer C++), CIO of CollegeConnects, AWS Cloud Intern @ ThinkChamp."
+    />
+    <meta property="og:url" content="https://murari182.github.io/" />
+    <meta property="og:image" content="https://murari182.github.io/assets/banner.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mukunda — Sreeramadasu Mukunda Rama Chary" />
+    <meta
+      name="twitter:description"
+      content="B.Tech Mathematics &amp; Computing @ RGIPT | Aspiring AI Engineer. Explore BigO Studio (TCAnalyzer C++), CollegeConnects, and AWS Cloud work."
+    />
+    <meta name="twitter:image" content="https://murari182.github.io/assets/banner.jpg" />
+
+    <!-- Preconnect & Google Fonts (Outfit + Plus Jakarta Sans + JetBrains Mono) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Outfit:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Schema.org JSON-LD: Person + CreativeWork Projects -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://murari182.github.io/#mukunda",
+            "name": "Sreeramadasu Mukunda Rama Chary",
+            "alternateName": "Mukunda",
+            "jobTitle": "Aspiring AI Engineer",
+            "url": "https://murari182.github.io/",
+            "image": "https://murari182.github.io/assets/avatar.jpg",
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Rajiv Gandhi Institute of Petroleum Technology (RGIPT)"
+            },
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Rajiv Gandhi Institute of Petroleum Technology (RGIPT)"
+              },
+              {
+                "@type": "Organization",
+                "name": "ThinkChamp"
+              },
+              {
+                "@type": "Organization",
+                "name": "CollegeConnects"
+              },
+              {
+                "@type": "Organization",
+                "name": "E-Cell RGIPT"
+              }
+            ],
+            "sameAs": [
+              "https://github.com/Murari182",
+              "https://www.linkedin.com/in/smrc182/",
+              "https://mukunda-deep-aurora.vercel.app"
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "name": "Featured Projects by Sreeramadasu Mukunda Rama Chary",
+            "itemListElement": [
+              {
+                "@type": "CreativeWork",
+                "position": 1,
+                "name": "BigO Studio (with TCAnalyzer C++ Library)",
+                "author": { "@id": "https://murari182.github.io/#mukunda" },
+                "description": "Algorithmic complexity analysis studio powered by the custom TCAnalyzer C++ library."
+              },
+              {
+                "@type": "CreativeWork",
+                "position": 2,
+                "name": "CollegeConnects",
+                "author": { "@id": "https://murari182.github.io/#mukunda" },
+                "description": "Campus networking and student collaboration platform where Mukunda serves as CIO."
+              },
+              {
+                "@type": "CreativeWork",
+                "position": 3,
+                "name": "AI-Powered Study Assistant",
+                "author": { "@id": "https://murari182.github.io/#mukunda" },
+                "description": "Intelligent study synthesis and active recall workflow companion."
+              },
+              {
+                "@type": "CreativeWork",
+                "position": 4,
+                "name": "CineReserve",
+                "author": { "@id": "https://murari182.github.io/#mukunda" },
+                "description": "Interactive cinema seat reservation and auditorium booking web application."
+              },
+              {
+                "@type": "SoftwareSourceCode",
+                "position": 5,
+                "name": "DSA_CPP Repository",
+                "author": { "@id": "https://murari182.github.io/#mukunda" },
+                "codeRepository": "https://github.com/Murari182/DSA_CPP",
+                "programmingLanguage": "C++"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
-  <body class="bg-[#09090D] text-[#FFF7FB] selection:bg-[#E8B4CB] selection:text-[#09090D] antialiased overflow-x-hidden">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body data-page="home">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- SVG Liquid Refraction Filter for visionOS Lens Edge Distortion -->
+    <svg class="svg-filters" aria-hidden="true">
+      <defs>
+        <filter id="liquid-refraction" x="-10%" y="-10%" width="120%" height="120%">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.025"
+            numOctaves="2"
+            result="noise"
+          />
+          <feDisplacementMap
+            in="SourceGraphic"
+            in2="noise"
+            scale="3"
+            xChannelSelector="R"
+            yChannelSelector="G"
+          />
+        </filter>
+      </defs>
+    </svg>
+
+    <!-- Drifting Gradient Orbs & Faint Noise Grain -->
+    <div class="ambient-canvas" aria-hidden="true">
+      <div class="ambient-orb orb-1"></div>
+      <div class="ambient-orb orb-2"></div>
+      <div class="ambient-orb orb-3"></div>
+      <div class="ambient-orb orb-4"></div>
+    </div>
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Fixed Floating visionOS Tab-Bar Pill (Strict 3-Zone Top Bar Contract) -->
+    <header class="top-nav-wrapper">
+      <div class="vision-navbar" role="navigation" aria-label="Primary Portfolio Navigation">
+        <a href="index.html" class="brand-wordmark">Mukunda</a>
+
+        <nav class="nav-pill-track" aria-label="Site Pages">
+          <div id="nav-glass-lens" class="nav-glass-lens" aria-hidden="true"></div>
+          <a href="index.html" class="nav-item-link" aria-current="page">Home</a>
+          <a href="about.html" class="nav-item-link">About</a>
+          <a href="projects.html" class="nav-item-link">Projects</a>
+          <a href="experience.html" class="nav-item-link">Experience</a>
+          <a href="contact.html" class="nav-item-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            type="button"
+            class="theme-toggle-btn"
+            data-theme-toggle
+            aria-label="Switch to dark glass mode"
+          >
+            <span class="theme-icon-glyph" aria-hidden="true">☀</span>
+            <span class="theme-label-text">Light Glass</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="page-shell">
+      <!-- Hero Section (2-Column Balanced Split) -->
+      <section class="section-block" aria-labelledby="hero-heading">
+        <div class="hero-split">
+          <!-- Left Column: Identity, Tagline, Verified Bio & CTAs -->
+          <div class="liquid-glass hero-main-panel" data-tilt>
+            <div>
+              <p class="kicker-line">Sreeramadasu Mukunda Rama Chary</p>
+              <h1 id="hero-heading" class="display-title" style="margin-bottom: 16px;">
+                Hi, I’m Mukunda. Building AI systems, C++ tooling &amp; cloud platforms.
+              </h1>
+              <p
+                style="font-size: 1.08rem; font-weight: 600; color: var(--accent-primary); margin-bottom: 16px;"
+              >
+                B.Tech Mathematics &amp; Computing @ RGIPT | Aspiring AI Engineer
+              </p>
+              <p class="lead-copy">
+                Undergraduate in Mathematics and Computing at Rajiv Gandhi Institute of Petroleum
+                Technology (since 2025). I build algorithmic analysis libraries like
+                <strong>BigO Studio (TCAnalyzer C++)</strong>, lead technical architecture as
+                <strong>CIO of CollegeConnects</strong>, and work with cloud infrastructure as an
+                <strong>AWS Cloud Intern at ThinkChamp</strong> and
+                <strong>AWS Student Builder Group Leader at RGIPT</strong>.
+              </p>
+            </div>
+
+            <div>
+              <div class="btn-row" style="margin-bottom: 18px;">
+                <a href="projects.html" class="btn-pill btn-primary-glass">View Projects</a>
+                <a href="contact.html" class="btn-pill btn-secondary-glass">Contact</a>
+                <a
+                  href="https://github.com/Murari182"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-pill btn-secondary-glass"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/smrc182/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-pill btn-secondary-glass"
+                >
+                  LinkedIn
+                </a>
+              </div>
+
+              <div class="meta-inline">
+                <span>GitHub: @Murari182</span>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <span>LinkedIn: smrc182</span>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <a
+                  href="https://mukunda-deep-aurora.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: var(--accent-primary); text-decoration: none; font-weight: 600;"
+                >
+                  Deep Aurora Portfolio ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Avatar in a Liquid Glass Frame -->
+          <aside class="liquid-glass hero-avatar-panel" data-tilt aria-label="Portrait and quick profile">
+            <div class="avatar-glass-frame">
+              <img
+                src="assets/avatar.jpg"
+                alt="Portrait of Sreeramadasu Mukunda Rama Chary (Mukunda)"
+                width="210"
+                height="210"
+                referrerpolicy="no-referrer"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="avatar-fallback" style="display: none;" aria-hidden="true">SM</div>
+            </div>
+
+            <div>
+              <h2 style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 700;">
+                Mukunda
+              </h2>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">
+                Mathematics &amp; Computing · RGIPT (2025–Present)
+              </p>
+              <p
+                style="font-size: 0.76rem; color: var(--text-muted); margin-top: 8px; max-width: 28ch; margin-inline: auto;"
+              >
+                Avatar loaded from <code>assets/avatar.jpg</code> (replace with your personal headshot before pushing).
+              </p>
+            </div>
+
+            <div class="meta-inline" style="justify-content: center;">
+              <span>Career Goal: AI Engineer</span>
+              <span class="meta-sep" aria-hidden="true">·</span>
+              <span>E-Cell RGIPT Tech Team</span>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Full-Width 4-Column Verified Highlights Strip Below Hero Split -->
+        <div class="kpi-strip" aria-label="Verified Academic and Leadership Highlights">
+          <article class="liquid-glass kpi-item">
+            <span class="kpi-label">Education</span>
+            <strong class="kpi-value">B.Tech M&amp;C @ RGIPT</strong>
+            <span class="kpi-sub">Mathematics &amp; Computing (Since 2025)</span>
+          </article>
+
+          <article class="liquid-glass kpi-item">
+            <span class="kpi-label">Cloud Internship</span>
+            <strong class="kpi-value">AWS Cloud Intern</strong>
+            <span class="kpi-sub">ThinkChamp (May – Jul 2026)</span>
+          </article>
+
+          <article class="liquid-glass kpi-item">
+            <span class="kpi-label">Executive Role</span>
+            <strong class="kpi-value">CIO · CollegeConnects</strong>
+            <span class="kpi-sub">Platform &amp; Information Strategy</span>
+          </article>
+
+          <article class="liquid-glass kpi-item">
+            <span class="kpi-label">Campus Leadership</span>
+            <strong class="kpi-value">AWS Builder Leader</strong>
+            <span class="kpi-sub">RGIPT Group Leader &amp; E-Cell Tech Team</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- Selected Engineering Highlights Section -->
+      <section class="section-block" aria-labelledby="selected-works-heading">
+        <div
+          style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 24px;"
+        >
+          <div>
+            <p class="kicker-line">Selected Engineering Work</p>
+            <h2 id="selected-works-heading" class="section-title">
+              Featured Systems, AI &amp; Web Projects
+            </h2>
+          </div>
+          <a href="projects.html" class="btn-pill btn-secondary-glass">
+            Explore All 5 Projects →
+          </a>
+        </div>
+
+        <div class="projects-grid">
+          <article class="liquid-glass liquid-glass-interactive project-card featured-wide" data-tilt>
+            <div>
+              <div class="meta-inline">
+                <span>Systems &amp; C++</span>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <span>TCAnalyzer C++ Library</span>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <span>4 min read</span>
+              </div>
+              <h3 class="project-title">BigO Studio</h3>
+              <p class="project-subtitle">
+                Algorithmic Complexity Studio powered by the TCAnalyzer C++ Library
+              </p>
+              <p class="project-desc">
+                Built to bridge theoretical asymptotic analysis and empirical C++ execution benchmarks.
+                Pairs the custom <strong>TCAnalyzer C++ library</strong> with an interactive studio for
+                evaluating time complexity scaling across varying input sizes.
+              </p>
+            </div>
+            <div class="card-footer-actions">
+              <div class="meta-inline">
+                <span>C++</span>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <span>TCAnalyzer</span>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <span>Algorithmic Analysis</span>
+              </div>
+              <div class="btn-row">
+                <a href="projects.html" class="btn-pill btn-primary-glass">Inspect in Projects</a>
+                <a
+                  href="https://github.com/Murari182"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-pill btn-secondary-glass"
+                >
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="liquid-glass liquid-glass-interactive project-card" data-tilt>
+            <div>
+              <div class="meta-inline">
+                <span>Web Platforms</span>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <span>CIO Role</span>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <span>3 min read</span>
+              </div>
+              <h3 class="project-title">CollegeConnects</h3>
+              <p class="project-subtitle">Campus Networking &amp; Student Collaboration Ecosystem</p>
+              <p class="project-desc">
+                Student community platform where I serve as Chief Information Officer (CIO), guiding
+                technical architecture, platform operations, and student discovery workflows.
+              </p>
+            </div>
+            <div class="card-footer-actions">
+              <div class="meta-inline">
+                <span>Full-Stack Web</span>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <span>Information Strategy</span>
+              </div>
+              <a href="projects.html" class="btn-pill btn-secondary-glass">Details →</a>
+            </div>
+          </article>
+
+          <article class="liquid-glass liquid-glass-interactive project-card" data-tilt>
+            <div>
+              <div class="meta-inline">
+                <span>AI &amp; Applied ML</span>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <span>Study Workflow</span>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <span>4 min read</span>
+              </div>
+              <h3 class="project-title">AI-Powered Study Assistant</h3>
+              <p class="project-subtitle">Intelligent Academic Synthesis &amp; Active Recall</p>
+              <p class="project-desc">
+                An AI-driven study companion engineered to synthesize lecture concepts, structure
+                revision sessions, and support technical problem-solving.
+              </p>
+            </div>
+            <div class="card-footer-actions">
+              <div class="meta-inline">
+                <span>AI Engineering</span>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <span>LLM Workflows</span>
+              </div>
+              <a href="projects.html" class="btn-pill btn-secondary-glass">Details →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Glass Footer -->
+    <footer class="site-footer">
+      <div class="liquid-glass footer-glass">
+        <div class="meta-inline">
+          <strong style="color: var(--text-primary);">Built by Mukunda</strong>
+          <span class="meta-sep" aria-hidden="true">·</span>
+          <span>Sreeramadasu Mukunda Rama Chary</span>
+          <span class="meta-sep" aria-hidden="true">·</span>
+          <span>RGIPT Mathematics &amp; Computing</span>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://github.com/Murari182" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/smrc182/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a
+            href="https://mukunda-deep-aurora.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Deep Aurora ↗
+          </a>
+          <button type="button" class="footer-link-btn" data-open-deliverables>
+            GitHub Pages &amp; [PLACEHOLDER] Guide
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- GitHub Pages Deployment, Profile README & [PLACEHOLDER] Checklist Modal -->
+    <div
+      id="deliverables-modal"
+      class="glass-modal-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="deliverables-modal-title"
+      aria-hidden="true"
+    >
+      <div class="glass-modal-dialog">
+        <div
+          style="display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px;"
+        >
+          <h2 id="deliverables-modal-title" class="section-title" style="font-size: 1.45rem;">
+            GitHub Pages Deployment, Profile README &amp; [PLACEHOLDER] Checklist
+          </h2>
+          <button
+            type="button"
+            id="close-deliverables-modal"
+            class="btn-pill btn-secondary-glass"
+            style="min-height: 36px; padding: 6px 14px;"
+          >
+            Close ✕
+          </button>
+        </div>
+
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 6px;">
+          1. Static File Structure (Ready for Murari182.github.io)
+        </h3>
+        <pre class="code-block-glass">Murari182.github.io/
+├── index.html          # Home page (Hero, Glass Avatar, Highlights, JSON-LD)
+├── about.html          # Bio, RGIPT Education, Verified Skills &amp; [PLACEHOLDER] items
+├── projects.html       # Filterable Projects Grid (BigO Studio, CollegeConnects, AI Study, CineReserve, DSA_CPP)
+├── experience.html     # Vertical Glass Timeline (ThinkChamp AWS Intern, CIO CollegeConnects, AWS Builder, E-Cell)
+├── contact.html        # Contact Card, [PLACEHOLDER] Email, Socials &amp; mailto: Form
+├── css/
+│   └── styles.css      # Apple visionOS Liquid Glass stylesheet + dark/light mode
+├── js/
+│   ├── app.js          # Sliding nav lens, View Transitions, droplet cursor, filter &amp; mailto logic
+│   └── mascot.js       # 3D GPU Mascot ("Muxy RTX") with spinning fans, eyes &amp; hop bounce
+└── assets/
+    ├── avatar.jpg      # Replace with your real photo (fallback ready)
+    ├── banner.jpg      # Liquid Glass OpenGraph / README banner
+    ├── github-banner.svg
+    └── favicon.svg</pre>
+
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 6px;">
+          2. Step-by-Step Deployment to Murari182.github.io
+        </h3>
+        <pre class="code-block-glass"># 1. Clone or initialize your user pages repository
+git clone https://github.com/Murari182/Murari182.github.io.git
+cd Murari182.github.io
+
+# 2. Copy index.html, about.html, projects.html, experience.html, contact.html,
+#    and the css/, js/, and assets/ folders into the repository root.
+# 3. Replace assets/avatar.jpg with your own portrait photo.
+
+git add index.html about.html projects.html experience.html contact.html css/ js/ assets/
+git commit -m "Deploy Apple visionOS Liquid Glass portfolio"
+git push -u origin main
+
+# 4. In GitHub -> Repo Settings -> Pages:
+#    Source: "Deploy from a branch" -> Branch: "main" -> Folder: "/ (root)" -> Save.
+#    Your site will be live at https://murari182.github.io/</pre>
+
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 6px;">
+          3. GitHub Profile README Snippet (Murari182/Murari182/README.md)
+        </h3>
+        <pre class="code-block-glass">&lt;div align="center"&gt;
+  &lt;a href="https://murari182.github.io"&gt;
+    &lt;img src="https://murari182.github.io/assets/github-banner.svg" alt="Sreeramadasu Mukunda Rama Chary — Liquid Glass Portfolio" width="100%" /&gt;
+  &lt;/a&gt;
+  &lt;br /&gt;&lt;br /&gt;
+  &lt;a href="https://murari182.github.io"&gt;
+    &lt;img src="https://img.shields.io/badge/Explore_Liquid_Glass_Portfolio-murari182.github.io-2563EB?style=for-the-badge&amp;logo=safari&amp;logoColor=white" alt="Open Portfolio" /&gt;
+  &lt;/a&gt;
+  &lt;a href="https://www.linkedin.com/in/smrc182/"&gt;
+    &lt;img src="https://img.shields.io/badge/LinkedIn-smrc182-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</pre>
+
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 6px;">
+          4. [PLACEHOLDER] Items You Need to Fill In
+        </h3>
+        <ul class="project-highlights">
+          <li><strong>assets/avatar.jpg</strong>: Replace the generated placeholder portrait with your own photograph.</li>
+          <li><strong>contact.html (Email Address)</strong>: Replace <code>[PLACEHOLDER: your.email@rgipt.ac.in]</code> and the recipient in <code>js/app.js</code> with your preferred contact email.</li>
+          <li><strong>projects.html (Direct Repo / Live URLs)</strong>: Fill in exact repository/demo URLs for BigO Studio, CollegeConnects, AI-Powered Study Assistant, and CineReserve.</li>
+          <li><strong>about.html (Skills &amp; Coursework)</strong>: Replace <code>[PLACEHOLDER]</code> tags on specific AI/ML frameworks (e.g., PyTorch, TensorFlow, LangChain) and RGIPT coursework/CGPA that you want to list.</li>
+          <li><strong>experience.html (Start Dates &amp; Bullet Details)</strong>: Fill in exact start months/years for CIO of CollegeConnects, AWS Student Builder Group Leader at RGIPT, and E-Cell RGIPT.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3D GPU Mascot ("Muxy RTX") -->
+    <div
+      id="gpu-mascot"
+      class="gpu-mascot-stage"
+      role="button"
+      tabindex="0"
+      aria-label="Interactive 3D GPU Mascot Muxy. Click to hop and boost cooling fans."
+    >
+      <div class="gpu-mascot-bubble" aria-live="polite">Muxy GPU · Ready to compute!</div>
+      <div class="gpu-mascot-actor">
+        <div class="gpu-mascot-body">
+          <div class="gpu-heatpipes" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="gpu-shroud-face">
+            <div class="gpu-fan-well">
+              <div class="gpu-fan-rotor" aria-hidden="true"></div>
+              <div class="gpu-eye"></div>
+            </div>
+            <div class="gpu-fan-well">
+              <div class="gpu-fan-rotor" aria-hidden="true"></div>
+              <div class="gpu-eye"></div>
+            </div>
+          </div>
+          <div class="gpu-wave-arm" aria-hidden="true"></div>
+          <div class="gpu-pcie-pins" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Liquid Droplet Cursor -->
+    <div id="liquid-cursor" class="liquid-cursor-root" aria-hidden="true">
+      <div class="cursor-ring"></div>
+      <div class="cursor-droplet"></div>
+    </div>
+
+    <script src="js/mascot.js" defer></script>
+    <script src="js/app.js" defer></script>
   </body>
 </html>

@@ -1,0 +1,6 @@
+{
+  "name": "Mukunda — Liquid Glass Portfolio",
+  "description": "Personal portfolio of Sreeramadasu Mukunda Rama Chary (Mukunda) — B.Tech Mathematics and Computing at RGIPT & Aspiring AI Engineer, built with an Apple visionOS Liquid Glass UI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
