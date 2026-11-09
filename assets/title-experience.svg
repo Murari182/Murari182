@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 84" width="100%" height="84" fill="none" role="img" aria-label="04 — EXPERIENCE & LEADERSHIP">
-  <title>04 — EXPERIENCE & LEADERSHIP</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 84" width="100%" height="84" fill="none" role="img" aria-label="04 — EXPERIENCE &amp; LEADERSHIP">
+  <title>04 — EXPERIENCE &amp; LEADERSHIP</title>
   <defs>
     <linearGradient id="lineGrad_04" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#4779E8" stop-opacity="0.45" />
@@ -20,11 +20,11 @@
   <text x="53" y="40" text-anchor="middle" fill="#9173E8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" letter-spacing="0.06em">04</text>
 
   <text x="98" y="42" fill="#18243A" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="700" letter-spacing="0.04em">
-    EXPERIENCE & LEADERSHIP
+    EXPERIENCE &amp; LEADERSHIP
   </text>
 
   <text x="98" y="63" fill="#8190A5" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" font-weight="500">
-    Cloud engineering internship, executive platform role & campus leadership
+    Cloud engineering internship, executive platform role &amp; campus leadership
   </text>
 
   <rect x="98" y="72" width="870" height="2" rx="1" fill="url(#lineGrad_04)" />

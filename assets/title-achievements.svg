@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 84" width="100%" height="84" fill="none" role="img" aria-label="06 — ACHIEVEMENTS & MILESTONES">
-  <title>06 — ACHIEVEMENTS & MILESTONES</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 84" width="100%" height="84" fill="none" role="img" aria-label="06 — ACHIEVEMENTS &amp; MILESTONES">
+  <title>06 — ACHIEVEMENTS &amp; MILESTONES</title>
   <defs>
     <linearGradient id="lineGrad_06" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#4779E8" stop-opacity="0.45" />
@@ -20,11 +20,11 @@
   <text x="53" y="40" text-anchor="middle" fill="#27BFCB" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" letter-spacing="0.06em">06</text>
 
   <text x="98" y="42" fill="#18243A" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="700" letter-spacing="0.04em">
-    ACHIEVEMENTS & MILESTONES
+    ACHIEVEMENTS &amp; MILESTONES
   </text>
 
   <text x="98" y="63" fill="#8190A5" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" font-weight="500">
-    Verified engineering & leadership milestones
+    Verified engineering &amp; leadership milestones
   </text>
 
   <rect x="98" y="72" width="870" height="2" rx="1" fill="url(#lineGrad_06)" />

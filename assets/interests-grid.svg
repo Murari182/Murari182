@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 205" width="100%" height="205" fill="none" role="img" aria-label="Core Areas of Interest: AI & ML, Data Structures & Algorithms, Mathematics & Computing, Full-Stack Development, Cloud Computing">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 205" width="100%" height="205" fill="none" role="img" aria-label="Core Areas of Interest: AI &amp; ML, Data Structures &amp; Algorithms, Mathematics &amp; Computing, Full-Stack Development, Cloud Computing">
   <title>What I Am Interested In — 5 Core Engineering Domains</title>
 
   <rect width="1000" height="205" rx="22" fill="#FFFFFF" />
 
-  <!-- Card 1: AI & Machine Learning -->
+  <!-- Card 1: AI &amp; Machine Learning -->
   <g transform="translate(8, 8)">
     <rect width="188" height="189" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
     <rect x="18" y="18" width="44" height="44" rx="13" fill="#EAF5FF" />
@@ -16,7 +16,7 @@
     <text x="18" y="166" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">&amp; applied AI systems.</text>
   </g>
 
-  <!-- Card 2: Data Structures & Algorithms -->
+  <!-- Card 2: Data Structures &amp; Algorithms -->
   <g transform="translate(207, 8)">
     <rect width="188" height="189" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
     <rect x="18" y="18" width="44" height="44" rx="13" fill="#DDFBFA" />
@@ -31,7 +31,7 @@
     <text x="18" y="166" fill="#52627A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">&amp; runtime benchmarking.</text>
   </g>
 
-  <!-- Card 3: Mathematics & Computing -->
+  <!-- Card 3: Mathematics &amp; Computing -->
   <g transform="translate(406, 8)">
     <rect width="188" height="189" rx="20" fill="#F8FBFF" stroke="#E5EAF2" stroke-width="1.2" />
     <rect x="18" y="18" width="44" height="44" rx="13" fill="#F0EBFF" />
